@@ -80,5 +80,15 @@ namespace QuanLyNhaHang
             else
                 ActiveChild("FrmTTNV");
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
