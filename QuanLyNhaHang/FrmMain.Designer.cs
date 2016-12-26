@@ -203,8 +203,8 @@
             // 
             this.ribbonControl1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonControl1.CaptionVisible = true;
-            this.ribbonControl1.Controls.Add(this.ribbonPanel10);
             this.ribbonControl1.Controls.Add(this.ribbonPanel1);
+            this.ribbonControl1.Controls.Add(this.ribbonPanel10);
             this.ribbonControl1.Controls.Add(this.ribbonPanel9);
             this.ribbonControl1.Controls.Add(this.ribbonPanel7);
             this.ribbonControl1.Controls.Add(this.ribbonPanel4);
@@ -273,6 +273,7 @@
             // 
             this.ribbonPanel10.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel10.TabIndex = 10;
+            this.ribbonPanel10.Visible = false;
             // 
             // ribbonBar1
             // 
@@ -398,7 +399,6 @@
             // 
             this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel1.TabIndex = 1;
-            this.ribbonPanel1.Visible = false;
             // 
             // bartindung
             // 
@@ -499,6 +499,7 @@
             this.btnQLNhanVien.Name = "btnQLNhanVien";
             this.btnQLNhanVien.SubItemsExpandWidth = 14;
             this.btnQLNhanVien.Text = "<div width=\"100\" align=\"center\">QL Nhân Viên</div>";
+            this.btnQLNhanVien.Click += new System.EventHandler(this.btnQLNhanVien_Click);
             // 
             // btnQLKhachHang
             // 
@@ -1725,13 +1726,13 @@
             // 
             // ribbonTabItem5
             // 
-            this.ribbonTabItem5.Checked = true;
             this.ribbonTabItem5.Name = "ribbonTabItem5";
             this.ribbonTabItem5.Panel = this.ribbonPanel10;
             this.ribbonTabItem5.Text = "HỆ THỐNG";
             // 
             // tabQuanly
             // 
+            this.tabQuanly.Checked = true;
             this.tabQuanly.Name = "tabQuanly";
             this.tabQuanly.Panel = this.ribbonPanel1;
             this.tabQuanly.Text = "QUẢN LÝ NHÀ HÀNG";
@@ -1886,7 +1887,7 @@
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx1.Location = new System.Drawing.Point(5, 155);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(240, 423);
+            this.panelEx1.Size = new System.Drawing.Size(240, 422);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -2182,7 +2183,7 @@
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1323, 580);
+            this.ClientSize = new System.Drawing.Size(1323, 579);
             this.Controls.Add(this.tabStrip1);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.ribbonControl1);

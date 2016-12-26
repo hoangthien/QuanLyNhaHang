@@ -90,5 +90,21 @@ namespace QuanLyNhaHang
         {
             Application.Exit();
         }
+
+        private void btnDSNhanVien_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQLNhanVien_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmNhanVien"))
+            {
+                FrmNhanVien Frm = new FrmNhanVien() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmNhanVien");
+        }
     }
 }
