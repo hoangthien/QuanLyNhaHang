@@ -1887,7 +1887,7 @@
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx1.Location = new System.Drawing.Point(5, 155);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(240, 418);
+            this.panelEx1.Size = new System.Drawing.Size(212, 418);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -1905,7 +1905,7 @@
             this.expKHDN.HideControlsWhenCollapsed = true;
             this.expKHDN.Location = new System.Drawing.Point(0, 448);
             this.expKHDN.Name = "expKHDN";
-            this.expKHDN.Size = new System.Drawing.Size(240, 122);
+            this.expKHDN.Size = new System.Drawing.Size(212, 122);
             this.expKHDN.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expKHDN.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expKHDN.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -1938,7 +1938,7 @@
             this.itemPanel4.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel4.Location = new System.Drawing.Point(0, 26);
             this.itemPanel4.Name = "itemPanel4";
-            this.itemPanel4.Size = new System.Drawing.Size(240, 96);
+            this.itemPanel4.Size = new System.Drawing.Size(212, 96);
             this.itemPanel4.TabIndex = 1;
             this.itemPanel4.Text = "itemPanel4";
             // 
@@ -1967,7 +1967,7 @@
             this.expKHCN.HideControlsWhenCollapsed = true;
             this.expKHCN.Location = new System.Drawing.Point(0, 325);
             this.expKHCN.Name = "expKHCN";
-            this.expKHCN.Size = new System.Drawing.Size(240, 123);
+            this.expKHCN.Size = new System.Drawing.Size(212, 123);
             this.expKHCN.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expKHCN.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expKHCN.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -2000,7 +2000,7 @@
             this.itemPanel3.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel3.Location = new System.Drawing.Point(0, 26);
             this.itemPanel3.Name = "itemPanel3";
-            this.itemPanel3.Size = new System.Drawing.Size(240, 97);
+            this.itemPanel3.Size = new System.Drawing.Size(212, 97);
             this.itemPanel3.TabIndex = 1;
             this.itemPanel3.Text = "itemPanel3";
             // 
@@ -2029,7 +2029,7 @@
             this.expQuanli.HideControlsWhenCollapsed = true;
             this.expQuanli.Location = new System.Drawing.Point(0, 206);
             this.expQuanli.Name = "expQuanli";
-            this.expQuanli.Size = new System.Drawing.Size(240, 119);
+            this.expQuanli.Size = new System.Drawing.Size(212, 119);
             this.expQuanli.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expQuanli.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expQuanli.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -2062,7 +2062,7 @@
             this.itemPanel2.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel2.Location = new System.Drawing.Point(0, 26);
             this.itemPanel2.Name = "itemPanel2";
-            this.itemPanel2.Size = new System.Drawing.Size(240, 93);
+            this.itemPanel2.Size = new System.Drawing.Size(212, 93);
             this.itemPanel2.TabIndex = 1;
             this.itemPanel2.Text = "itemPanel2";
             // 
@@ -2091,7 +2091,7 @@
             this.expnhanvien.HideControlsWhenCollapsed = true;
             this.expnhanvien.Location = new System.Drawing.Point(0, 0);
             this.expnhanvien.Name = "expnhanvien";
-            this.expnhanvien.Size = new System.Drawing.Size(240, 206);
+            this.expnhanvien.Size = new System.Drawing.Size(212, 206);
             this.expnhanvien.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expnhanvien.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expnhanvien.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -2126,7 +2126,7 @@
             this.itemPanel1.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel1.Location = new System.Drawing.Point(0, 26);
             this.itemPanel1.Name = "itemPanel1";
-            this.itemPanel1.Size = new System.Drawing.Size(240, 180);
+            this.itemPanel1.Size = new System.Drawing.Size(212, 180);
             this.itemPanel1.TabIndex = 1;
             this.itemPanel1.Text = "itemPanel1";
             // 
@@ -2169,12 +2169,12 @@
             this.tabStrip1.CloseButtonVisible = true;
             this.tabStrip1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabStrip1.ForeColor = System.Drawing.Color.Black;
-            this.tabStrip1.Location = new System.Drawing.Point(245, 155);
+            this.tabStrip1.Location = new System.Drawing.Point(217, 155);
             this.tabStrip1.MdiForm = this;
             this.tabStrip1.MdiTabbedDocuments = true;
             this.tabStrip1.Name = "tabStrip1";
             this.tabStrip1.SelectedTab = null;
-            this.tabStrip1.Size = new System.Drawing.Size(1073, 23);
+            this.tabStrip1.Size = new System.Drawing.Size(1101, 23);
             this.tabStrip1.Style = DevComponents.DotNetBar.eTabStripStyle.VS2005;
             this.tabStrip1.TabIndex = 40;
             this.tabStrip1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;

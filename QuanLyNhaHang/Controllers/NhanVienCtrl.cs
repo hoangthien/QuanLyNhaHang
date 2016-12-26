@@ -10,18 +10,18 @@ namespace QuanLyNhaHang.Controllers
 {
     class NhanVienCtrl
     {
-        //public static DataSet FillDataSet_getNhanVienByIdNhanVien(string _idNhanVien)
-        //{
-        //    try
-        //    {
-        //        Models.NhanVienMod nvien = new Models.NhanVienMod(_idNhanVien);
-        //        return nvien.FillDataSet_getNhanVienByIdNhanVien();
-        //    }
-        //    catch
-        //    {
-        //        return null;
-        //    }
-        //}
+        public static DataSet FillDataSet_getNhanVienByIdNhanVien(string _idNhanVien)
+        {
+            try
+            {
+                Models.NhanVienMod nvien = new Models.NhanVienMod(_idNhanVien);
+                return nvien.FillDataSet();
+            }
+            catch
+            {
+                return null;
+            }
+        }
 
         // Hàm add
         public static int InsertNhanVien(string _idNhanVien, string _hoNhanVien, string _tenNhanVien, DateTime _NSNV, string _gioitinhNV, string _dtNV, string _emailNV, string _dichiNV)

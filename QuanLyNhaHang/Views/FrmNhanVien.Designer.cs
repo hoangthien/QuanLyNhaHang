@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.cmbGioiTinh = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.dtpNgaySinh = new DevExpress.XtraEditors.DateEdit();
             this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
             this.txtEmail = new DevExpress.XtraEditors.TextEdit();
             this.txtDienThoai = new DevExpress.XtraEditors.TextEdit();
@@ -53,10 +51,10 @@
             this.dgvDSNhanVien = new System.Windows.Forms.DataGridView();
             this.btnSearch = new DevComponents.DotNetBar.ButtonX();
             this.btnHide = new DevComponents.DotNetBar.ButtonX();
+            this.cmbGioiTinh = new System.Windows.Forms.ComboBox();
+            this.btnHuy = new DevComponents.DotNetBar.ButtonX();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.groupPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbGioiTinh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtpNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtpNgaySinh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDienThoai.Properties)).BeginInit();
@@ -71,8 +69,8 @@
             // 
             this.groupPanel1.BackColor = System.Drawing.Color.White;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.cmbGioiTinh);
             this.groupPanel1.Controls.Add(this.dtpNgaySinh);
+            this.groupPanel1.Controls.Add(this.cmbGioiTinh);
             this.groupPanel1.Controls.Add(this.txtDiaChi);
             this.groupPanel1.Controls.Add(this.txtEmail);
             this.groupPanel1.Controls.Add(this.txtDienThoai);
@@ -120,35 +118,6 @@
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 0;
             this.groupPanel1.Text = "Thông Tin Nhân Viên";
-            // 
-            // cmbGioiTinh
-            // 
-            this.cmbGioiTinh.Location = new System.Drawing.Point(307, 124);
-            this.cmbGioiTinh.Name = "cmbGioiTinh";
-            this.cmbGioiTinh.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.cmbGioiTinh.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.cmbGioiTinh.Properties.Appearance.Options.UseBackColor = true;
-            this.cmbGioiTinh.Properties.Appearance.Options.UseForeColor = true;
-            this.cmbGioiTinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbGioiTinh.Size = new System.Drawing.Size(161, 20);
-            this.cmbGioiTinh.TabIndex = 24;
-            // 
-            // dtpNgaySinh
-            // 
-            this.dtpNgaySinh.EditValue = null;
-            this.dtpNgaySinh.Location = new System.Drawing.Point(89, 126);
-            this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.dtpNgaySinh.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.dtpNgaySinh.Properties.Appearance.Options.UseBackColor = true;
-            this.dtpNgaySinh.Properties.Appearance.Options.UseForeColor = true;
-            this.dtpNgaySinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtpNgaySinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtpNgaySinh.Size = new System.Drawing.Size(130, 20);
-            this.dtpNgaySinh.TabIndex = 23;
             // 
             // txtDiaChi
             // 
@@ -309,48 +278,52 @@
             this.btnAdd.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAdd.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnAdd.Image = global::QuanLyNhaHang.Properties.Resources.save;
-            this.btnAdd.Location = new System.Drawing.Point(8, 275);
+            this.btnAdd.Location = new System.Drawing.Point(6, 275);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(96, 29);
+            this.btnAdd.Size = new System.Drawing.Size(95, 29);
             this.btnAdd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnAdd.TabIndex = 17;
             this.btnAdd.Text = "THÊM";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnEdit
             // 
             this.btnEdit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnEdit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnEdit.Image = global::QuanLyNhaHang.Properties.Resources.save;
-            this.btnEdit.Location = new System.Drawing.Point(145, 275);
+            this.btnEdit.Location = new System.Drawing.Point(109, 275);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(96, 29);
+            this.btnEdit.Size = new System.Drawing.Size(95, 29);
             this.btnEdit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnEdit.TabIndex = 18;
             this.btnEdit.Text = "SỬA";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnDelete.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnDelete.Image = global::QuanLyNhaHang.Properties.Resources.save;
-            this.btnDelete.Location = new System.Drawing.Point(258, 275);
+            this.btnDelete.Location = new System.Drawing.Point(212, 275);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(96, 29);
+            this.btnDelete.Size = new System.Drawing.Size(95, 29);
             this.btnDelete.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnDelete.TabIndex = 19;
             this.btnDelete.Text = "XÓA";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSave
             // 
             this.btnSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnSave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnSave.Image = global::QuanLyNhaHang.Properties.Resources.save;
-            this.btnSave.Location = new System.Drawing.Point(377, 275);
+            this.btnSave.Location = new System.Drawing.Point(318, 275);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(96, 29);
+            this.btnSave.Size = new System.Drawing.Size(95, 29);
             this.btnSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "LƯU";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // groupPanel2
             // 
@@ -404,9 +377,9 @@
             this.btnSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnSearch.Image = global::QuanLyNhaHang.Properties.Resources.save;
-            this.btnSearch.Location = new System.Drawing.Point(521, 275);
+            this.btnSearch.Location = new System.Drawing.Point(546, 275);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(96, 29);
+            this.btnSearch.Size = new System.Drawing.Size(105, 29);
             this.btnSearch.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnSearch.TabIndex = 26;
             this.btnSearch.Text = "TÌM KIẾM";
@@ -423,11 +396,41 @@
             this.btnHide.TabIndex = 27;
             this.btnHide.Text = "<<";
             // 
+            // cmbGioiTinh
+            // 
+            this.cmbGioiTinh.FormattingEnabled = true;
+            this.cmbGioiTinh.Location = new System.Drawing.Point(307, 121);
+            this.cmbGioiTinh.Name = "cmbGioiTinh";
+            this.cmbGioiTinh.Size = new System.Drawing.Size(161, 21);
+            this.cmbGioiTinh.TabIndex = 25;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnHuy.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnHuy.Image = global::QuanLyNhaHang.Properties.Resources.save;
+            this.btnHuy.Location = new System.Drawing.Point(421, 275);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(95, 29);
+            this.btnHuy.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnHuy.TabIndex = 28;
+            this.btnHuy.Text = "HỦY";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(89, 121);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(130, 22);
+            this.dtpNgaySinh.TabIndex = 26;
+            // 
             // FrmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1107, 406);
+            this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnHide);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.groupPanel2);
@@ -443,9 +446,6 @@
             this.Load += new System.EventHandler(this.FrmNhanVien_Load);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbGioiTinh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtpNgaySinh.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtpNgaySinh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDienThoai.Properties)).EndInit();
@@ -479,11 +479,12 @@
         private DevComponents.DotNetBar.ButtonX btnEdit;
         private DevComponents.DotNetBar.ButtonX btnDelete;
         private DevComponents.DotNetBar.ButtonX btnSave;
-        private DevExpress.XtraEditors.DateEdit dtpNgaySinh;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbGioiTinh;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
         private System.Windows.Forms.DataGridView dgvDSNhanVien;
         private DevComponents.DotNetBar.ButtonX btnSearch;
         private DevComponents.DotNetBar.ButtonX btnHide;
+        private System.Windows.Forms.ComboBox cmbGioiTinh;
+        private DevComponents.DotNetBar.ButtonX btnHuy;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
     }
 }
