@@ -1171,7 +1171,7 @@
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx1.Location = new System.Drawing.Point(5, 155);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(212, 415);
+            this.panelEx1.Size = new System.Drawing.Size(212, 414);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -1528,6 +1528,7 @@
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.SubItemsExpandWidth = 14;
             this.btnThanhToan.Text = "<div width=\"100\" align=\"center\">Thanh Toán</div>";
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // btnResgusti
             // 
@@ -2185,7 +2186,7 @@
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1323, 572);
+            this.ClientSize = new System.Drawing.Size(1323, 571);
             this.Controls.Add(this.tabStrip1);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.ribbonControl1);

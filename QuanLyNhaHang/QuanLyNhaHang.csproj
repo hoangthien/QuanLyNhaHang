@@ -112,9 +112,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BanCtrl.cs" />
     <Compile Include="Controllers\KhachHangCtrl.cs" />
     <Compile Include="Controllers\KhuVucCtrl.cs" />
     <Compile Include="Controllers\NhanVienCtrl.cs" />
+    <Compile Include="Models\BanMod.cs" />
     <Compile Include="Models\KhachHangMod.cs" />
     <Compile Include="Models\KhuVucMod.cs" />
     <Compile Include="Views\frmDangky.cs">
@@ -122,6 +124,12 @@
     </Compile>
     <Compile Include="Views\frmDangky.Designer.cs">
       <DependentUpon>frmDangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmBan.Designer.cs">
+      <DependentUpon>FrmBan.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmKhachHang.cs">
       <SubType>Form</SubType>
@@ -171,6 +179,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Views\frmDangky.resx">
       <DependentUpon>frmDangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmBan.resx">
+      <DependentUpon>FrmBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmKhachHang.resx">
       <DependentUpon>FrmKhachHang.cs</DependentUpon>

@@ -129,5 +129,16 @@ namespace QuanLyNhaHang
                 ActiveChild("FrmKhachHang");
             
         }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmBan"))
+            {
+                Views.FrmBan Frm = new Views.FrmBan() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmBan");
+        }
     }
 }
