@@ -1518,6 +1518,7 @@
             this.btnQLGoiMon.Name = "btnQLGoiMon";
             this.btnQLGoiMon.SubItemsExpandWidth = 14;
             this.btnQLGoiMon.Text = "<div width=\"100\" align=\"center\">QL Gọi Món</div>";
+            this.btnQLGoiMon.Click += new System.EventHandler(this.btnQLGoiMon_Click);
             // 
             // btnThanhToan
             // 

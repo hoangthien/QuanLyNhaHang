@@ -117,5 +117,17 @@ namespace QuanLyNhaHang
             else
                 ActiveChild("FrmKhuVuc");
         }
+
+        private void btnQLGoiMon_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmKhachHang"))
+            {
+                Views.FrmKhachHang Frm = new Views.FrmKhachHang() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmKhachHang");
+            
+        }
     }
 }
