@@ -163,5 +163,17 @@ namespace QuanLyNhaHang
                 ActiveChild("FrmLoaiThucDon");
             
         }
+
+        private void btnKM_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmThucDon"))
+            {
+                Views.FrmThucDon Frm = new Views.FrmThucDon() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmThucDon");
+            
+        }
     }
 }

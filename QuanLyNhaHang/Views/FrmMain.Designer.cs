@@ -1491,6 +1491,7 @@
             this.btnKM.Name = "btnKM";
             this.btnKM.SubItemsExpandWidth = 14;
             this.btnKM.Text = "<div width=\"100\" align=\"center\">Chương Trình KM</div>";
+            this.btnKM.Click += new System.EventHandler(this.btnKM_Click);
             // 
             // btnQLNhanVien
             // 

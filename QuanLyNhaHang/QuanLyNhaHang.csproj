@@ -123,6 +123,12 @@
     <Compile Include="Models\KhuVucMod.cs" />
     <Compile Include="Models\LoaiThucDonMod.cs" />
     <Compile Include="Models\ThucDonMod.cs" />
+    <Compile Include="Views\FrmThucDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmThucDon.Designer.cs">
+      <DependentUpon>FrmThucDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmDanhSachTD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +199,9 @@
     <Compile Include="Models\NhanVienMod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\FrmThucDon.resx">
+      <DependentUpon>FrmThucDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmDanhSachTD.resx">
       <DependentUpon>FrmDanhSachTD.cs</DependentUpon>
     </EmbeddedResource>
