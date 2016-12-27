@@ -106,5 +106,16 @@ namespace QuanLyNhaHang
             else
                 ActiveChild("FrmNhanVien");
         }
+
+        private void btnQLKhachHang_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmKhuVuc"))
+            {
+                Views.FrmKhuVuc Frm = new Views.FrmKhuVuc() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmKhuVuc");
+        }
     }
 }
