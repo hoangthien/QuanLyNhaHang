@@ -113,16 +113,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\BanCtrl.cs" />
+    <Compile Include="Controllers\GoiMonCtrl.cs" />
     <Compile Include="Controllers\KhachHangCtrl.cs" />
     <Compile Include="Controllers\KhuVucCtrl.cs" />
     <Compile Include="Controllers\LoaiThucDonCtrl.cs" />
     <Compile Include="Controllers\NhanVienCtrl.cs" />
     <Compile Include="Controllers\ThucDonCtrl.cs" />
     <Compile Include="Models\BanMod.cs" />
+    <Compile Include="Models\GoiMonMod.cs" />
     <Compile Include="Models\KhachHangMod.cs" />
     <Compile Include="Models\KhuVucMod.cs" />
     <Compile Include="Models\LoaiThucDonMod.cs" />
     <Compile Include="Models\ThucDonMod.cs" />
+    <Compile Include="Views\FrmMonDaGoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmMonDaGoi.Designer.cs">
+      <DependentUpon>FrmMonDaGoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmGoiMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmGoiMon.Designer.cs">
+      <DependentUpon>FrmGoiMon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmThucDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,12 +197,6 @@
     <Compile Include="Views\FrmNhanVien.Designer.cs">
       <DependentUpon>FrmNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmDemo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FrmDemo.Designer.cs">
-      <DependentUpon>FrmDemo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\FrmTTNV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +207,12 @@
     <Compile Include="Models\NhanVienMod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\FrmMonDaGoi.resx">
+      <DependentUpon>FrmMonDaGoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmGoiMon.resx">
+      <DependentUpon>FrmGoiMon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmThucDon.resx">
       <DependentUpon>FrmThucDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,9 +242,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmNhanVien.resx">
       <DependentUpon>FrmNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmDemo.resx">
-      <DependentUpon>FrmDemo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmTTNV.resx">
       <DependentUpon>FrmTTNV.cs</DependentUpon>

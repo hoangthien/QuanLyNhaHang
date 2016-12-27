@@ -143,13 +143,13 @@ namespace QuanLyNhaHang
 
         private void btnMonAn_Click(object sender, EventArgs e)
         {
-            if (!CheckExistForm("FrmDanhSachTD"))
+            if (!CheckExistForm("FrmGoiMon"))
             {
-                Views.FrmDanhSachTD Frm = new Views.FrmDanhSachTD() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Views.FrmGoiMon Frm = new Views.FrmGoiMon() { MdiParent = this, WindowState = FormWindowState.Maximized };
                 Frm.Show();
             }
             else
-                ActiveChild("FrmDanhSachTD");
+                ActiveChild("FrmGoiMon");
         }
 
         private void btnDoUong_Click(object sender, EventArgs e)
