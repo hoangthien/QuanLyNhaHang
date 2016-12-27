@@ -11,7 +11,7 @@ namespace QuanLyNhaHang.Models
 {
     class connection
     {
-        public static string sqlcon = "server =HOANGTHIEN\\SQLEXPRESS; Initial Catalog=QuanLyNhaHang; Integrated Security=True";
+        public static string sqlcon = "server =HOANGTHIEN\\SQLEXPRESS; uid= sa; pwd= 1234; database = dbSoftQuanLyNhaHang";
 
         public static SqlConnection Getconnection()
         {
