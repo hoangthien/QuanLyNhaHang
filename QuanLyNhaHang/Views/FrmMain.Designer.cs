@@ -1171,7 +1171,7 @@
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx1.Location = new System.Drawing.Point(5, 155);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(212, 414);
+            this.panelEx1.Size = new System.Drawing.Size(212, 412);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -1471,6 +1471,7 @@
             this.btnMonAn.Name = "btnMonAn";
             this.btnMonAn.SubItemsExpandWidth = 14;
             this.btnMonAn.Text = "<div width=\"100\" align=\"center\">Món Ăn</div>";
+            this.btnMonAn.Click += new System.EventHandler(this.btnMonAn_Click);
             // 
             // btnDoUong
             // 
@@ -1480,6 +1481,7 @@
             this.btnDoUong.Name = "btnDoUong";
             this.btnDoUong.SubItemsExpandWidth = 14;
             this.btnDoUong.Text = "<div width=\"100\" align=\"center\">Đồ Uống</div>";
+            this.btnDoUong.Click += new System.EventHandler(this.btnDoUong_Click);
             // 
             // btnKM
             // 
@@ -2186,7 +2188,7 @@
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1323, 571);
+            this.ClientSize = new System.Drawing.Size(1323, 569);
             this.Controls.Add(this.tabStrip1);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.ribbonControl1);

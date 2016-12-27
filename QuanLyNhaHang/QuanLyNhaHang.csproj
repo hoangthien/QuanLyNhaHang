@@ -115,10 +115,26 @@
     <Compile Include="Controllers\BanCtrl.cs" />
     <Compile Include="Controllers\KhachHangCtrl.cs" />
     <Compile Include="Controllers\KhuVucCtrl.cs" />
+    <Compile Include="Controllers\LoaiThucDonCtrl.cs" />
     <Compile Include="Controllers\NhanVienCtrl.cs" />
+    <Compile Include="Controllers\ThucDonCtrl.cs" />
     <Compile Include="Models\BanMod.cs" />
     <Compile Include="Models\KhachHangMod.cs" />
     <Compile Include="Models\KhuVucMod.cs" />
+    <Compile Include="Models\LoaiThucDonMod.cs" />
+    <Compile Include="Models\ThucDonMod.cs" />
+    <Compile Include="Views\FrmDanhSachTD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmDanhSachTD.Designer.cs">
+      <DependentUpon>FrmDanhSachTD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmLoaiThucDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmLoaiThucDon.Designer.cs">
+      <DependentUpon>FrmLoaiThucDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmDangky.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +193,12 @@
     <Compile Include="Models\NhanVienMod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\FrmDanhSachTD.resx">
+      <DependentUpon>FrmDanhSachTD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmLoaiThucDon.resx">
+      <DependentUpon>FrmLoaiThucDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmDangky.resx">
       <DependentUpon>frmDangky.cs</DependentUpon>
     </EmbeddedResource>

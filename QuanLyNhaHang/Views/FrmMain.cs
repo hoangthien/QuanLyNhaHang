@@ -140,5 +140,28 @@ namespace QuanLyNhaHang
             else
                 ActiveChild("FrmBan");
         }
+
+        private void btnMonAn_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmDanhSachTD"))
+            {
+                Views.FrmDanhSachTD Frm = new Views.FrmDanhSachTD() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmDanhSachTD");
+        }
+
+        private void btnDoUong_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmLoaiThucDon"))
+            {
+                Views.FrmLoaiThucDon Frm = new Views.FrmLoaiThucDon() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmLoaiThucDon");
+            
+        }
     }
 }
