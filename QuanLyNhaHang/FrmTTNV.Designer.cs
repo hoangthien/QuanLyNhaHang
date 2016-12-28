@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTTNV));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnThemMoi = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.btnThemMoi = new System.Windows.Forms.Button();
             this.groupPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +85,86 @@
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 0;
             this.groupPanel1.Text = "Thông Tin Nhân Viên";
+            // 
+            // btnThemMoi
+            // 
+            this.btnThemMoi.BackColor = System.Drawing.Color.White;
+            this.btnThemMoi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnThemMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemMoi.ForeColor = System.Drawing.Color.Black;
+            this.btnThemMoi.Image = global::QuanLyNhaHang.Properties.Resources.Them;
+            this.btnThemMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemMoi.Location = new System.Drawing.Point(83, 16);
+            this.btnThemMoi.Name = "btnThemMoi";
+            this.btnThemMoi.Size = new System.Drawing.Size(107, 57);
+            this.btnThemMoi.TabIndex = 79;
+            this.btnThemMoi.Text = "Thêm ";
+            this.btnThemMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThemMoi.UseVisualStyleBackColor = false;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.BackColor = System.Drawing.Color.White;
+            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.ForeColor = System.Drawing.Color.Black;
+            this.btnHuy.Image = global::QuanLyNhaHang.Properties.Resources.Huy;
+            this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuy.Location = new System.Drawing.Point(535, 16);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(107, 57);
+            this.btnHuy.TabIndex = 78;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHuy.UseVisualStyleBackColor = false;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.Color.White;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.Black;
+            this.btnXoa.Image = global::QuanLyNhaHang.Properties.Resources.Xoa;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(422, 16);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(107, 57);
+            this.btnXoa.TabIndex = 77;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXoa.UseVisualStyleBackColor = false;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.BackColor = System.Drawing.Color.White;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.Black;
+            this.btnLuu.Image = global::QuanLyNhaHang.Properties.Resources.Luu;
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(309, 16);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(107, 57);
+            this.btnLuu.TabIndex = 75;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLuu.UseVisualStyleBackColor = false;
+            // 
+            // btnSua
+            // 
+            this.btnSua.BackColor = System.Drawing.Color.White;
+            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.Color.Black;
+            this.btnSua.Image = global::QuanLyNhaHang.Properties.Resources.Sua;
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(196, 16);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(107, 57);
+            this.btnSua.TabIndex = 76;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSua.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -165,86 +245,6 @@
             this.button5.Text = "Sửa";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = false;
-            // 
-            // btnSua
-            // 
-            this.btnSua.BackColor = System.Drawing.Color.White;
-            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.ForeColor = System.Drawing.Color.Black;
-            this.btnSua.Image = global::QuanLyNhaHang.Properties.Resources.Sua;
-            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(196, 16);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(107, 57);
-            this.btnSua.TabIndex = 76;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSua.UseVisualStyleBackColor = false;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.BackColor = System.Drawing.Color.White;
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.Black;
-            this.btnLuu.Image = global::QuanLyNhaHang.Properties.Resources.Luu;
-            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(309, 16);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(107, 57);
-            this.btnLuu.TabIndex = 75;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLuu.UseVisualStyleBackColor = false;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.BackColor = System.Drawing.Color.White;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.Black;
-            this.btnXoa.Image = global::QuanLyNhaHang.Properties.Resources.Xoa;
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(422, 16);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(107, 57);
-            this.btnXoa.TabIndex = 77;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnXoa.UseVisualStyleBackColor = false;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.BackColor = System.Drawing.Color.White;
-            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.ForeColor = System.Drawing.Color.Black;
-            this.btnHuy.Image = global::QuanLyNhaHang.Properties.Resources.Huy;
-            this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuy.Location = new System.Drawing.Point(535, 16);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(107, 57);
-            this.btnHuy.TabIndex = 78;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHuy.UseVisualStyleBackColor = false;
-            // 
-            // btnThemMoi
-            // 
-            this.btnThemMoi.BackColor = System.Drawing.Color.White;
-            this.btnThemMoi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnThemMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemMoi.ForeColor = System.Drawing.Color.Black;
-            this.btnThemMoi.Image = global::QuanLyNhaHang.Properties.Resources.Them;
-            this.btnThemMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemMoi.Location = new System.Drawing.Point(83, 16);
-            this.btnThemMoi.Name = "btnThemMoi";
-            this.btnThemMoi.Size = new System.Drawing.Size(107, 57);
-            this.btnThemMoi.TabIndex = 79;
-            this.btnThemMoi.Text = "Thêm ";
-            this.btnThemMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemMoi.UseVisualStyleBackColor = false;
             // 
             // FrmTTNV
             // 
