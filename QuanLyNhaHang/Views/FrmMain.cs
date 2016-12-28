@@ -87,7 +87,7 @@ namespace QuanLyNhaHang
 
         private void btnAbout_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("ĐỒ ÁN MÔN: PHƯƠNG PHÁP PHÁT TRIỂN PHẦN MỀM HƯỚNG ĐỐI TƯỢNG SÁNG THỨ 6");
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -284,6 +284,94 @@ namespace QuanLyNhaHang
         }
 
         private void btnQLTinhTien_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmGoiMon"))
+            {
+                Views.FrmGoiMon Frm = new Views.FrmGoiMon() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmGoiMon");
+        }
+
+        private void btnQLNV_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmNhanVien"))
+            {
+                Views.FrmNhanVien Frm = new Views.FrmNhanVien() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmNhanVien");
+        }
+
+        private void btnQLKH_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmKhachHang"))
+            {
+                Views.FrmKhachHang Frm = new Views.FrmKhachHang() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmKhachHang");
+        }
+
+        private void btnQLKV_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmKhuVuc"))
+            {
+                Views.FrmKhuVuc Frm = new Views.FrmKhuVuc() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmKhuVuc");
+        }
+
+        private void btnQLBA_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmBan"))
+            {
+                Views.FrmBan Frm = new Views.FrmBan() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmBan");
+        }
+
+        private void btnMENU_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmDanhSachTD"))
+            {
+                Views.FrmDanhSachTD Frm = new Views.FrmDanhSachTD() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmDanhSachTD");
+        }
+
+        private void btnQLTD_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmThucDon"))
+            {
+                Views.FrmThucDon Frm = new Views.FrmThucDon() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmThucDon");
+        }
+
+        private void btnQLGM_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmMonDaGoi"))
+            {
+                Views.FrmMonDaGoi Frm = new Views.FrmMonDaGoi() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmMonDaGoi");
+        }
+
+        private void btnTT_Click(object sender, EventArgs e)
         {
             if (!CheckExistForm("FrmGoiMon"))
             {
