@@ -89,7 +89,7 @@
             this.btnThemMoi.ForeColor = System.Drawing.Color.Black;
             this.btnThemMoi.Image = global::QuanLyNhaHang.Properties.Resources.Them;
             this.btnThemMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemMoi.Location = new System.Drawing.Point(96, 67);
+            this.btnThemMoi.Location = new System.Drawing.Point(83, 16);
             this.btnThemMoi.Name = "btnThemMoi";
             this.btnThemMoi.Size = new System.Drawing.Size(107, 57);
             this.btnThemMoi.TabIndex = 79;
@@ -105,7 +105,7 @@
             this.btnHuy.ForeColor = System.Drawing.Color.Black;
             this.btnHuy.Image = global::QuanLyNhaHang.Properties.Resources.Huy;
             this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuy.Location = new System.Drawing.Point(548, 67);
+            this.btnHuy.Location = new System.Drawing.Point(535, 16);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(107, 57);
             this.btnHuy.TabIndex = 78;
@@ -121,7 +121,7 @@
             this.btnXoa.ForeColor = System.Drawing.Color.Black;
             this.btnXoa.Image = global::QuanLyNhaHang.Properties.Resources.Xoa;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(435, 67);
+            this.btnXoa.Location = new System.Drawing.Point(422, 16);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(107, 57);
             this.btnXoa.TabIndex = 77;
@@ -137,7 +137,7 @@
             this.btnLuu.ForeColor = System.Drawing.Color.Black;
             this.btnLuu.Image = global::QuanLyNhaHang.Properties.Resources.Luu;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(322, 67);
+            this.btnLuu.Location = new System.Drawing.Point(309, 16);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(107, 57);
             this.btnLuu.TabIndex = 75;
@@ -153,7 +153,7 @@
             this.btnSua.ForeColor = System.Drawing.Color.Black;
             this.btnSua.Image = global::QuanLyNhaHang.Properties.Resources.Sua;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(209, 67);
+            this.btnSua.Location = new System.Drawing.Point(196, 16);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(107, 57);
             this.btnSua.TabIndex = 76;
