@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNhanVien));
             this.label12 = new System.Windows.Forms.Label();
             this.grDanhSachNV = new System.Windows.Forms.GroupBox();
             this.dgvDanhSachNV = new System.Windows.Forms.DataGridView();
@@ -56,24 +57,25 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtIdNhanVien = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnThemMoi = new System.Windows.Forms.Button();
+            this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.grDanhSachNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachNV)).BeginInit();
             this.grQuanLyNV.SuspendLayout();
+            this.groupPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(806, 25);
+            this.label12.Location = new System.Drawing.Point(440, 205);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(189, 17);
             this.label12.TabIndex = 76;
@@ -81,12 +83,12 @@
             // 
             // grDanhSachNV
             // 
-            this.grDanhSachNV.BackColor = System.Drawing.Color.White;
+            this.grDanhSachNV.BackColor = System.Drawing.Color.Transparent;
             this.grDanhSachNV.Controls.Add(this.dgvDanhSachNV);
-            this.grDanhSachNV.ForeColor = System.Drawing.Color.Black;
-            this.grDanhSachNV.Location = new System.Drawing.Point(478, 54);
+            this.grDanhSachNV.ForeColor = System.Drawing.Color.Transparent;
+            this.grDanhSachNV.Location = new System.Drawing.Point(7, 225);
             this.grDanhSachNV.Name = "grDanhSachNV";
-            this.grDanhSachNV.Size = new System.Drawing.Size(792, 205);
+            this.grDanhSachNV.Size = new System.Drawing.Size(1091, 259);
             this.grDanhSachNV.TabIndex = 75;
             this.grDanhSachNV.TabStop = false;
             // 
@@ -111,7 +113,7 @@
             this.dgvDanhSachNV.Location = new System.Drawing.Point(3, 16);
             this.dgvDanhSachNV.Name = "dgvDanhSachNV";
             this.dgvDanhSachNV.ReadOnly = true;
-            this.dgvDanhSachNV.Size = new System.Drawing.Size(786, 186);
+            this.dgvDanhSachNV.Size = new System.Drawing.Size(1085, 240);
             this.dgvDanhSachNV.TabIndex = 60;
             // 
             // IdNhanVien
@@ -172,7 +174,7 @@
             // 
             // grQuanLyNV
             // 
-            this.grQuanLyNV.BackColor = System.Drawing.Color.White;
+            this.grQuanLyNV.BackColor = System.Drawing.Color.Transparent;
             this.grQuanLyNV.Controls.Add(this.cmbGioiTinhNV);
             this.grQuanLyNV.Controls.Add(this.label4);
             this.grQuanLyNV.Controls.Add(this.dtpNgaySinhNV);
@@ -190,11 +192,12 @@
             this.grQuanLyNV.Controls.Add(this.txtIdNhanVien);
             this.grQuanLyNV.Controls.Add(this.label6);
             this.grQuanLyNV.ForeColor = System.Drawing.Color.Black;
-            this.grQuanLyNV.Location = new System.Drawing.Point(12, 55);
+            this.grQuanLyNV.Location = new System.Drawing.Point(26, 26);
             this.grQuanLyNV.Name = "grQuanLyNV";
-            this.grQuanLyNV.Size = new System.Drawing.Size(407, 202);
+            this.grQuanLyNV.Size = new System.Drawing.Size(407, 158);
             this.grQuanLyNV.TabIndex = 69;
             this.grQuanLyNV.TabStop = false;
+            this.grQuanLyNV.Text = "THÔNG TIN NHÂN VIÊN";
             // 
             // cmbGioiTinhNV
             // 
@@ -209,7 +212,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(213, 116);
             this.label4.Name = "label4";
@@ -239,7 +242,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(14, 53);
             this.label5.Name = "label5";
@@ -269,7 +272,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(213, 53);
             this.label10.Name = "label10";
@@ -289,7 +292,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(213, 81);
             this.label9.Name = "label9";
@@ -300,7 +303,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(213, 22);
             this.label8.Name = "label8";
@@ -311,7 +314,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(14, 116);
             this.label3.Name = "label3";
@@ -331,7 +334,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(14, 81);
             this.label2.Name = "label2";
@@ -353,7 +356,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(14, 25);
             this.label6.Name = "label6";
@@ -361,25 +364,13 @@
             this.label6.TabIndex = 91;
             this.label6.Text = "Id Nhân viên :";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(116, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 17);
-            this.label1.TabIndex = 72;
-            this.label1.Text = "QUẢN LÝ NHÂN VIÊN";
-            // 
             // btnLuu
             // 
             this.btnLuu.BackColor = System.Drawing.Color.White;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.Black;
-            this.btnLuu.Location = new System.Drawing.Point(249, 275);
+            this.btnLuu.Location = new System.Drawing.Point(779, 42);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 70;
@@ -393,7 +384,7 @@
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.Black;
-            this.btnSua.Location = new System.Drawing.Point(99, 275);
+            this.btnSua.Location = new System.Drawing.Point(629, 42);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
             this.btnSua.TabIndex = 71;
@@ -407,7 +398,7 @@
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.Black;
-            this.btnXoa.Location = new System.Drawing.Point(174, 275);
+            this.btnXoa.Location = new System.Drawing.Point(704, 42);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
             this.btnXoa.TabIndex = 72;
@@ -421,7 +412,7 @@
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.ForeColor = System.Drawing.Color.Black;
-            this.btnHuy.Location = new System.Drawing.Point(324, 275);
+            this.btnHuy.Location = new System.Drawing.Point(854, 42);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 23);
             this.btnHuy.TabIndex = 73;
@@ -435,7 +426,7 @@
             this.btnThemMoi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThemMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemMoi.ForeColor = System.Drawing.Color.Black;
-            this.btnThemMoi.Location = new System.Drawing.Point(24, 275);
+            this.btnThemMoi.Location = new System.Drawing.Point(554, 42);
             this.btnThemMoi.Name = "btnThemMoi";
             this.btnThemMoi.Size = new System.Drawing.Size(75, 23);
             this.btnThemMoi.TabIndex = 74;
@@ -443,30 +434,71 @@
             this.btnThemMoi.UseVisualStyleBackColor = false;
             this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
             // 
+            // groupPanel1
+            // 
+            this.groupPanel1.BackColor = System.Drawing.Color.White;
+            this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
+            this.groupPanel1.Controls.Add(this.label12);
+            this.groupPanel1.Controls.Add(this.btnThemMoi);
+            this.groupPanel1.Controls.Add(this.grDanhSachNV);
+            this.groupPanel1.Controls.Add(this.btnHuy);
+            this.groupPanel1.Controls.Add(this.grQuanLyNV);
+            this.groupPanel1.Controls.Add(this.btnXoa);
+            this.groupPanel1.Controls.Add(this.btnLuu);
+            this.groupPanel1.Controls.Add(this.btnSua);
+            this.groupPanel1.Location = new System.Drawing.Point(12, 12);
+            this.groupPanel1.Name = "groupPanel1";
+            this.groupPanel1.Size = new System.Drawing.Size(1116, 508);
+            // 
+            // 
+            // 
+            this.groupPanel1.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel1.Style.BackColorGradientAngle = 90;
+            this.groupPanel1.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel1.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderBottomWidth = 1;
+            this.groupPanel1.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel1.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderLeftWidth = 1;
+            this.groupPanel1.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderRightWidth = 1;
+            this.groupPanel1.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderTopWidth = 1;
+            this.groupPanel1.Style.CornerDiameter = 4;
+            this.groupPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel1.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel1.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel1.TabIndex = 77;
+            this.groupPanel1.Text = "Thông Tin Nhân Viên";
+            // 
             // FrmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1257, 579);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.grDanhSachNV);
-            this.Controls.Add(this.grQuanLyNV);
-            this.Controls.Add(this.btnLuu);
-            this.Controls.Add(this.btnSua);
-            this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnHuy);
-            this.Controls.Add(this.btnThemMoi);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1140, 532);
+            this.Controls.Add(this.groupPanel1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmNhanVien";
+            this.Text = "QUẢN LÝ NHÂN VIÊN";
             this.Load += new System.EventHandler(this.FrmNhanVien_Load);
             this.grDanhSachNV.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachNV)).EndInit();
             this.grQuanLyNV.ResumeLayout(false);
             this.grQuanLyNV.PerformLayout();
+            this.groupPanel1.ResumeLayout(false);
+            this.groupPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -499,11 +531,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIdNhanVien;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnThemMoi;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
     }
 }
