@@ -36,14 +36,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.grpThongTinTK = new System.Windows.Forms.GroupBox();
+            this.cmmbIdNhanVien = new System.Windows.Forms.ComboBox();
             this.grpPhanQuyen = new System.Windows.Forms.GroupBox();
-            this.chkQuanLy = new System.Windows.Forms.CheckBox();
-            this.chkKhuVuc = new System.Windows.Forms.CheckBox();
+            this.chkTroGiup = new System.Windows.Forms.CheckBox();
+            this.chkThuChi = new System.Windows.Forms.CheckBox();
+            this.chkHeThong = new System.Windows.Forms.CheckBox();
             this.chkThucDon = new System.Windows.Forms.CheckBox();
             this.chkGoiMon = new System.Windows.Forms.CheckBox();
-            this.chkHeThong = new System.Windows.Forms.CheckBox();
-            this.chkThuChi = new System.Windows.Forms.CheckBox();
-            this.chkTroGiup = new System.Windows.Forms.CheckBox();
+            this.chkKhuVuc = new System.Windows.Forms.CheckBox();
+            this.chkQuanLy = new System.Windows.Forms.CheckBox();
             this.dgvPhanQuyen = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -52,7 +53,6 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.cmmbIdNhanVien = new System.Windows.Forms.ComboBox();
             this.grpThongTinTK.SuspendLayout();
             this.grpPhanQuyen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhanQuyen)).BeginInit();
@@ -146,6 +146,16 @@
             this.grpThongTinTK.TabStop = false;
             this.grpThongTinTK.Text = "Thông tin tài khoản";
             // 
+            // cmmbIdNhanVien
+            // 
+            this.cmmbIdNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cmmbIdNhanVien.FormattingEnabled = true;
+            this.cmmbIdNhanVien.Location = new System.Drawing.Point(131, 76);
+            this.cmmbIdNhanVien.Name = "cmmbIdNhanVien";
+            this.cmmbIdNhanVien.Size = new System.Drawing.Size(140, 23);
+            this.cmmbIdNhanVien.TabIndex = 1;
+            this.cmmbIdNhanVien.SelectedIndexChanged += new System.EventHandler(this.cmmbIdNhanVien_SelectedIndexChanged);
+            // 
             // grpPhanQuyen
             // 
             this.grpPhanQuyen.Controls.Add(this.chkTroGiup);
@@ -163,27 +173,38 @@
             this.grpPhanQuyen.TabStop = false;
             this.grpPhanQuyen.Text = "Lựa Chọn Phân Quyền";
             // 
-            // chkQuanLy
+            // chkTroGiup
             // 
-            this.chkQuanLy.AutoSize = true;
-            this.chkQuanLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chkQuanLy.Location = new System.Drawing.Point(24, 28);
-            this.chkQuanLy.Name = "chkQuanLy";
-            this.chkQuanLy.Size = new System.Drawing.Size(73, 17);
-            this.chkQuanLy.TabIndex = 2;
-            this.chkQuanLy.Text = "Quản Lý";
-            this.chkQuanLy.UseVisualStyleBackColor = true;
+            this.chkTroGiup.AutoSize = true;
+            this.chkTroGiup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.chkTroGiup.Location = new System.Drawing.Point(128, 81);
+            this.chkTroGiup.Name = "chkTroGiup";
+            this.chkTroGiup.Size = new System.Drawing.Size(75, 17);
+            this.chkTroGiup.TabIndex = 8;
+            this.chkTroGiup.Text = "Trợ Giúp";
+            this.chkTroGiup.UseVisualStyleBackColor = true;
             // 
-            // chkKhuVuc
+            // chkThuChi
             // 
-            this.chkKhuVuc.AutoSize = true;
-            this.chkKhuVuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chkKhuVuc.Location = new System.Drawing.Point(24, 81);
-            this.chkKhuVuc.Name = "chkKhuVuc";
-            this.chkKhuVuc.Size = new System.Drawing.Size(74, 17);
-            this.chkKhuVuc.TabIndex = 4;
-            this.chkKhuVuc.Text = "Khu Vực";
-            this.chkKhuVuc.UseVisualStyleBackColor = true;
+            this.chkThuChi.AutoSize = true;
+            this.chkThuChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.chkThuChi.Location = new System.Drawing.Point(128, 57);
+            this.chkThuChi.Name = "chkThuChi";
+            this.chkThuChi.Size = new System.Drawing.Size(70, 17);
+            this.chkThuChi.TabIndex = 7;
+            this.chkThuChi.Text = "Thu Chi";
+            this.chkThuChi.UseVisualStyleBackColor = true;
+            // 
+            // chkHeThong
+            // 
+            this.chkHeThong.AutoSize = true;
+            this.chkHeThong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.chkHeThong.Location = new System.Drawing.Point(24, 104);
+            this.chkHeThong.Name = "chkHeThong";
+            this.chkHeThong.Size = new System.Drawing.Size(82, 17);
+            this.chkHeThong.TabIndex = 5;
+            this.chkHeThong.Text = "Hệ Thống";
+            this.chkHeThong.UseVisualStyleBackColor = true;
             // 
             // chkThucDon
             // 
@@ -207,38 +228,27 @@
             this.chkGoiMon.Text = "Gọi Món";
             this.chkGoiMon.UseVisualStyleBackColor = true;
             // 
-            // chkHeThong
+            // chkKhuVuc
             // 
-            this.chkHeThong.AutoSize = true;
-            this.chkHeThong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chkHeThong.Location = new System.Drawing.Point(24, 104);
-            this.chkHeThong.Name = "chkHeThong";
-            this.chkHeThong.Size = new System.Drawing.Size(82, 17);
-            this.chkHeThong.TabIndex = 5;
-            this.chkHeThong.Text = "Hệ Thống";
-            this.chkHeThong.UseVisualStyleBackColor = true;
+            this.chkKhuVuc.AutoSize = true;
+            this.chkKhuVuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.chkKhuVuc.Location = new System.Drawing.Point(24, 81);
+            this.chkKhuVuc.Name = "chkKhuVuc";
+            this.chkKhuVuc.Size = new System.Drawing.Size(74, 17);
+            this.chkKhuVuc.TabIndex = 4;
+            this.chkKhuVuc.Text = "Khu Vực";
+            this.chkKhuVuc.UseVisualStyleBackColor = true;
             // 
-            // chkThuChi
+            // chkQuanLy
             // 
-            this.chkThuChi.AutoSize = true;
-            this.chkThuChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chkThuChi.Location = new System.Drawing.Point(128, 57);
-            this.chkThuChi.Name = "chkThuChi";
-            this.chkThuChi.Size = new System.Drawing.Size(70, 17);
-            this.chkThuChi.TabIndex = 7;
-            this.chkThuChi.Text = "Thu Chi";
-            this.chkThuChi.UseVisualStyleBackColor = true;
-            // 
-            // chkTroGiup
-            // 
-            this.chkTroGiup.AutoSize = true;
-            this.chkTroGiup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chkTroGiup.Location = new System.Drawing.Point(128, 81);
-            this.chkTroGiup.Name = "chkTroGiup";
-            this.chkTroGiup.Size = new System.Drawing.Size(75, 17);
-            this.chkTroGiup.TabIndex = 8;
-            this.chkTroGiup.Text = "Trợ Giúp";
-            this.chkTroGiup.UseVisualStyleBackColor = true;
+            this.chkQuanLy.AutoSize = true;
+            this.chkQuanLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.chkQuanLy.Location = new System.Drawing.Point(24, 28);
+            this.chkQuanLy.Name = "chkQuanLy";
+            this.chkQuanLy.Size = new System.Drawing.Size(73, 17);
+            this.chkQuanLy.TabIndex = 2;
+            this.chkQuanLy.Text = "Quản Lý";
+            this.chkQuanLy.UseVisualStyleBackColor = true;
             // 
             // dgvPhanQuyen
             // 
@@ -334,28 +344,18 @@
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // cmmbIdNhanVien
-            // 
-            this.cmmbIdNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cmmbIdNhanVien.FormattingEnabled = true;
-            this.cmmbIdNhanVien.Location = new System.Drawing.Point(131, 76);
-            this.cmmbIdNhanVien.Name = "cmmbIdNhanVien";
-            this.cmmbIdNhanVien.Size = new System.Drawing.Size(140, 23);
-            this.cmmbIdNhanVien.TabIndex = 1;
-            this.cmmbIdNhanVien.SelectedIndexChanged += new System.EventHandler(this.cmmbIdNhanVien_SelectedIndexChanged);
-            // 
-            // uctPhanQuyen
+            // FrmPhanQuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            //this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ClientSize = new System.Drawing.Size(550, 435);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dgvPhanQuyen);
             this.Controls.Add(this.grpPhanQuyen);
             this.Controls.Add(this.grpThongTinTK);
+            this.DoubleBuffered = true;
             this.Name = "FrmPhanQuyen";
-            this.Size = new System.Drawing.Size(566, 423);
             this.Load += new System.EventHandler(this.FrmPhanQuyen_Load);
             this.grpThongTinTK.ResumeLayout(false);
             this.grpThongTinTK.PerformLayout();

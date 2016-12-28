@@ -187,6 +187,8 @@
             // 
             this.ribbonControl1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonControl1.CaptionVisible = true;
+            this.ribbonControl1.Controls.Add(this.ribbonPanel2);
+            this.ribbonControl1.Controls.Add(this.ribbonPanel1);
             this.ribbonControl1.Controls.Add(this.ribbonPanel9);
             this.ribbonControl1.Controls.Add(this.ribbonPanel4);
             this.ribbonControl1.Controls.Add(this.ribbonPanel8);
@@ -194,8 +196,6 @@
             this.ribbonControl1.Controls.Add(this.ribbonPanel6);
             this.ribbonControl1.Controls.Add(this.ribbonPanel7);
             this.ribbonControl1.Controls.Add(this.ribbonPanel3);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel1);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel2);
             this.ribbonControl1.Controls.Add(this.ribbonPanel10);
             this.ribbonControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.ribbonControl1.ForeColor = System.Drawing.Color.Black;
@@ -240,10 +240,10 @@
             this.ribbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonPanel2.Controls.Add(this.barkhachhangcanhan);
             this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel2.Location = new System.Drawing.Point(0, 0);
+            this.ribbonPanel2.Location = new System.Drawing.Point(0, 54);
             this.ribbonPanel2.Name = "ribbonPanel2";
             this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 2);
-            this.ribbonPanel2.Size = new System.Drawing.Size(1313, 154);
+            this.ribbonPanel2.Size = new System.Drawing.Size(1313, 100);
             // 
             // 
             // 
@@ -257,7 +257,6 @@
             // 
             this.ribbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel2.TabIndex = 2;
-            this.ribbonPanel2.Visible = false;
             // 
             // barkhachhangcanhan
             // 
@@ -277,7 +276,7 @@
             this.btnTimKiemKhachHang});
             this.barkhachhangcanhan.Location = new System.Drawing.Point(3, 0);
             this.barkhachhangcanhan.Name = "barkhachhangcanhan";
-            this.barkhachhangcanhan.Size = new System.Drawing.Size(291, 152);
+            this.barkhachhangcanhan.Size = new System.Drawing.Size(291, 98);
             this.barkhachhangcanhan.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.barkhachhangcanhan.TabIndex = 0;
             this.barkhachhangcanhan.Text = "Quản Lý Khách Hàng";
@@ -353,10 +352,10 @@
             this.ribbonPanel1.Controls.Add(this.bartindung);
             this.ribbonPanel1.Controls.Add(this.barthongtinkh);
             this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonPanel1.Location = new System.Drawing.Point(0, 54);
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 2);
-            this.ribbonPanel1.Size = new System.Drawing.Size(1313, 154);
+            this.ribbonPanel1.Size = new System.Drawing.Size(1313, 100);
             // 
             // 
             // 
@@ -390,7 +389,7 @@
             this.btnChamCong});
             this.bartindung.Location = new System.Drawing.Point(387, 0);
             this.bartindung.Name = "bartindung";
-            this.bartindung.Size = new System.Drawing.Size(293, 152);
+            this.bartindung.Size = new System.Drawing.Size(293, 98);
             this.bartindung.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.bartindung.TabIndex = 0;
             this.bartindung.Text = "Chấm Công - Tính Lương Nhân Viên";
@@ -422,7 +421,7 @@
             this.btnPhanQuyenNhanVien});
             this.barthongtinkh.Location = new System.Drawing.Point(3, 0);
             this.barthongtinkh.Name = "barthongtinkh";
-            this.barthongtinkh.Size = new System.Drawing.Size(384, 152);
+            this.barthongtinkh.Size = new System.Drawing.Size(384, 98);
             this.barthongtinkh.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.barthongtinkh.TabIndex = 0;
             this.barthongtinkh.Text = "Quản Lý Nhân Viên";
@@ -660,6 +659,7 @@
             // 
             this.ribbonPanel9.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel9.TabIndex = 9;
+            this.ribbonPanel9.Visible = false;
             // 
             // ribbonBar2
             // 
@@ -979,6 +979,7 @@
             // 
             // tabcanhan
             // 
+            this.tabcanhan.Checked = true;
             this.tabcanhan.Name = "tabcanhan";
             this.tabcanhan.Panel = this.ribbonPanel2;
             this.tabcanhan.Text = "QUẢN LÝ KHÁCH HÀNG";
@@ -1003,7 +1004,6 @@
             // 
             // ribbonTabItem4
             // 
-            this.ribbonTabItem4.Checked = true;
             this.ribbonTabItem4.Name = "ribbonTabItem4";
             this.ribbonTabItem4.Panel = this.ribbonPanel9;
             this.ribbonTabItem4.Text = "QUẢN LÝ GỌI MÓN";
@@ -1110,7 +1110,7 @@
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx1.Location = new System.Drawing.Point(5, 155);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(212, 374);
+            this.panelEx1.Size = new System.Drawing.Size(212, 373);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -2012,7 +2012,7 @@
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1323, 531);
+            this.ClientSize = new System.Drawing.Size(1323, 530);
             this.Controls.Add(this.tabStrip1);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.ribbonControl1);
