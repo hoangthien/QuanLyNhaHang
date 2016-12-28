@@ -48,12 +48,12 @@
             this.ThoiGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnThemMoi = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGoiMon)).BeginInit();
             this.groupPanel1.SuspendLayout();
@@ -65,18 +65,18 @@
             this.dtpThoiGian.BackColor = System.Drawing.Color.White;
             this.dtpThoiGian.ForeColor = System.Drawing.Color.Black;
             this.dtpThoiGian.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpThoiGian.Location = new System.Drawing.Point(874, 34);
+            this.dtpThoiGian.Location = new System.Drawing.Point(965, 39);
             this.dtpThoiGian.Name = "dtpThoiGian";
-            this.dtpThoiGian.Size = new System.Drawing.Size(121, 20);
+            this.dtpThoiGian.Size = new System.Drawing.Size(95, 20);
             this.dtpThoiGian.TabIndex = 14;
             // 
             // txtSoLuong
             // 
             this.txtSoLuong.BackColor = System.Drawing.Color.White;
             this.txtSoLuong.ForeColor = System.Drawing.Color.Black;
-            this.txtSoLuong.Location = new System.Drawing.Point(411, 38);
+            this.txtSoLuong.Location = new System.Drawing.Point(575, 41);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(52, 20);
+            this.txtSoLuong.Size = new System.Drawing.Size(85, 20);
             this.txtSoLuong.TabIndex = 13;
             this.txtSoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuong_KeyPress);
             // 
@@ -84,10 +84,10 @@
             // 
             this.txtDonGia.BackColor = System.Drawing.Color.White;
             this.txtDonGia.ForeColor = System.Drawing.Color.Black;
-            this.txtDonGia.Location = new System.Drawing.Point(632, 34);
+            this.txtDonGia.Location = new System.Drawing.Point(739, 39);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.ReadOnly = true;
-            this.txtDonGia.Size = new System.Drawing.Size(100, 20);
+            this.txtDonGia.Size = new System.Drawing.Size(138, 20);
             this.txtDonGia.TabIndex = 12;
             // 
             // label7
@@ -95,7 +95,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(781, 38);
+            this.label7.Location = new System.Drawing.Point(897, 44);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 13);
             this.label7.TabIndex = 6;
@@ -106,7 +106,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(336, 42);
+            this.label5.Location = new System.Drawing.Point(514, 44);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 13);
             this.label5.TabIndex = 7;
@@ -117,7 +117,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(568, 38);
+            this.label3.Location = new System.Drawing.Point(678, 43);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 8;
@@ -128,7 +128,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(156, 42);
+            this.label2.Location = new System.Drawing.Point(226, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 9;
@@ -150,9 +150,9 @@
             this.cmbTenThucDon.BackColor = System.Drawing.Color.White;
             this.cmbTenThucDon.ForeColor = System.Drawing.Color.Black;
             this.cmbTenThucDon.FormattingEnabled = true;
-            this.cmbTenThucDon.Location = new System.Drawing.Point(249, 38);
+            this.cmbTenThucDon.Location = new System.Drawing.Point(315, 40);
             this.cmbTenThucDon.Name = "cmbTenThucDon";
-            this.cmbTenThucDon.Size = new System.Drawing.Size(75, 21);
+            this.cmbTenThucDon.Size = new System.Drawing.Size(184, 21);
             this.cmbTenThucDon.TabIndex = 11;
             this.cmbTenThucDon.SelectedIndexChanged += new System.EventHandler(this.cmbTenThucDon_SelectedIndexChanged);
             // 
@@ -162,9 +162,9 @@
             this.cmbIdBan.BackColor = System.Drawing.Color.White;
             this.cmbIdBan.ForeColor = System.Drawing.Color.Black;
             this.cmbIdBan.FormattingEnabled = true;
-            this.cmbIdBan.Location = new System.Drawing.Point(89, 38);
+            this.cmbIdBan.Location = new System.Drawing.Point(77, 38);
             this.cmbIdBan.Name = "cmbIdBan";
-            this.cmbIdBan.Size = new System.Drawing.Size(60, 21);
+            this.cmbIdBan.Size = new System.Drawing.Size(130, 21);
             this.cmbIdBan.TabIndex = 5;
             // 
             // groupBox1
@@ -287,6 +287,26 @@
             this.groupPanel1.TabIndex = 22;
             this.groupPanel1.Text = "THÔNG TIN GỌI MÓN";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.cmbTenThucDon);
+            this.groupBox2.Controls.Add(this.dtpThoiGian);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.cmbIdBan);
+            this.groupBox2.Controls.Add(this.txtSoLuong);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.txtDonGia);
+            this.groupBox2.Location = new System.Drawing.Point(37, 15);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1081, 88);
+            this.groupBox2.TabIndex = 80;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "THÔNG TIN GỌI MÓN";
+            // 
             // btnThemMoi
             // 
             this.btnThemMoi.BackColor = System.Drawing.Color.White;
@@ -371,26 +391,6 @@
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.cmbTenThucDon);
-            this.groupBox2.Controls.Add(this.dtpThoiGian);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.cmbIdBan);
-            this.groupBox2.Controls.Add(this.txtSoLuong);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.txtDonGia);
-            this.groupBox2.Location = new System.Drawing.Point(37, 15);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1081, 88);
-            this.groupBox2.TabIndex = 80;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "THÔNG TIN GỌI MÓN";
             // 
             // FrmMonDaGoi
             // 
