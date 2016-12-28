@@ -338,6 +338,7 @@
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.SubItemsExpandWidth = 14;
             this.btnLogOut.Text = "<div width=\"100\" align=\"center\">Đăng Xuất</div>";
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnInfomation
             // 
@@ -357,6 +358,7 @@
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.SubItemsExpandWidth = 14;
             this.btnBackup.Text = "<div width=\"100\" align=\"center\">Sao Lưu</div>";
+            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
             // 
             // btnRestore
             // 

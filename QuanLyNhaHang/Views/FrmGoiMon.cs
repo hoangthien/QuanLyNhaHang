@@ -42,8 +42,7 @@ namespace QuanLyNhaHang.Views
         }
         private void FrmGoiMon_Load(object sender, EventArgs e)
         {
-            FrmDanhSachTD uctDSTD = new FrmDanhSachTD();
-            nhung(uctDSTD);
+
             ShowListView();
             dgvGoiMon.Dock = DockStyle.Fill;
             dgvGoiMon.RowHeadersVisible = false;
@@ -173,8 +172,6 @@ namespace QuanLyNhaHang.Views
                 {
                     MessageBox.Show("TỔNG SỐ TIỀN THANH TOÁN CỦA " + " [ " + label1.Text + " ] " + " LÀ " + lblTongTien.Text, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     tinhtien();
-                    FrmMonDaGoi uctMDG = new FrmMonDaGoi();
-                    nhung(uctMDG);
                     string _IdBan = lvDanhSachBan.SelectedItems[0].SubItems[1].Text;
                     dgvGoiMon.DataSource = Controllers.GoiMonCtrl.DeleteGoiMon(_IdBan);
                     FrmGoiMon_Load(sender, e);
@@ -187,25 +184,7 @@ namespace QuanLyNhaHang.Views
             catch { MessageBox.Show("Bạn chưa chọn bàn thanh toán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); }
             FrmGoiMon_Load(sender, e);
         }
-        public void nhung(Control ctr)
-        {
-            pnlGoiMon.Controls.Clear();
-            pnlGoiMon.BorderStyle = BorderStyle.Fixed3D;
-            ctr.Dock = DockStyle.Fill;
-            pnlGoiMon.Controls.Add(ctr);
-            pnlGoiMon.Show();
-        }
-        public void nhungFrom(Form frm)
-        {
 
-            pnlGoiMon.Controls.Clear();
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.TopLevel = false;
-            frm.Visible = true;
-            frm.Dock = DockStyle.Fill;
-            pnlGoiMon.Controls.Add(frm);
-            pnlGoiMon.Show();
-        }
         private void lvDanhSachBan_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lvDanhSachBan.SelectedItems.Count == 0)
@@ -216,20 +195,6 @@ namespace QuanLyNhaHang.Views
             {
 
             }
-        }
-
-        private void btnGoimon_Click(object sender, EventArgs e)
-        {
-            FrmMonDaGoi uctMDG = new FrmMonDaGoi();
-            FrmGoiMon_Load(sender, e);
-            nhung(uctMDG);
-        }
-
-        private void btnMenu_Click(object sender, EventArgs e)
-        {
-            FrmDanhSachTD uctDSTD = new FrmDanhSachTD();
-            nhung(uctDSTD);
-            FrmGoiMon_Load(sender, e);
         }
 
         private void btnIn_Click(object sender, EventArgs e)

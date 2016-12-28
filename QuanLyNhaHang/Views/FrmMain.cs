@@ -198,5 +198,29 @@ namespace QuanLyNhaHang
             else
                 ActiveChild("FrmPhanQuyen");
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmMonDaGoi"))
+            {
+                Views.FrmMonDaGoi Frm = new Views.FrmMonDaGoi() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmMonDaGoi");
+            
+        }
+
+        private void btnBackup_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmDanhSachTD"))
+            {
+                Views.FrmDanhSachTD Frm = new Views.FrmDanhSachTD() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmDanhSachTD");
+            
+        }
     }
 }

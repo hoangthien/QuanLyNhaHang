@@ -29,17 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGoiMon));
             this.ctxtnenuTabDanhSachBan = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.hiểnThịBànChưaCóNgườiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hiểnThịBànCóNgườiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hiểnThịTấtCảBànToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.pnlGoiMon = new System.Windows.Forms.Panel();
             this.lvDanhSachBan = new System.Windows.Forms.ListView();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.btnIn = new System.Windows.Forms.Button();
-            this.btnGoimon = new System.Windows.Forms.Button();
             this.btnTinhtien = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvGoiMon = new System.Windows.Forms.DataGridView();
@@ -59,7 +57,7 @@
             this.hiểnThịBànCóNgườiToolStripMenuItem,
             this.hiểnThịTấtCảBànToolStripMenuItem});
             this.ctxtnenuTabDanhSachBan.Name = "ctxtnenuTabDanhSachBan";
-            this.ctxtnenuTabDanhSachBan.Size = new System.Drawing.Size(219, 92);
+            this.ctxtnenuTabDanhSachBan.Size = new System.Drawing.Size(219, 70);
             // 
             // hiểnThịBànChưaCóNgườiToolStripMenuItem
             // 
@@ -84,9 +82,14 @@
             // 
             // imageList1
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "21216-200.png");
+            this.imageList1.Images.SetKeyName(1, "catering (1).png");
+            this.imageList1.Images.SetKeyName(2, "coffe_conguoi.png");
+            this.imageList1.Images.SetKeyName(3, "iconcfms.png");
+            this.imageList1.Images.SetKeyName(4, "print.png");
+            this.imageList1.Images.SetKeyName(5, "round-border-menu-bar-128.png");
             // 
             // label1
             // 
@@ -98,15 +101,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 2;
-            // 
-            // pnlGoiMon
-            // 
-            this.pnlGoiMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
-            this.pnlGoiMon.ForeColor = System.Drawing.Color.Black;
-            this.pnlGoiMon.Location = new System.Drawing.Point(477, 249);
-            this.pnlGoiMon.Name = "pnlGoiMon";
-            this.pnlGoiMon.Size = new System.Drawing.Size(784, 316);
-            this.pnlGoiMon.TabIndex = 16;
             // 
             // lvDanhSachBan
             // 
@@ -122,22 +116,6 @@
             this.lvDanhSachBan.SelectedIndexChanged += new System.EventHandler(this.lvDanhSachBan_SelectedIndexChanged);
             this.lvDanhSachBan.Click += new System.EventHandler(this.lvDanhSachBan_Click);
             // 
-            // btnMenu
-            // 
-            this.btnMenu.BackColor = System.Drawing.Color.White;
-            this.btnMenu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenu.ForeColor = System.Drawing.Color.Black;
-            this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.ImageList = this.imageList1;
-            this.btnMenu.Location = new System.Drawing.Point(556, 185);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(120, 58);
-            this.btnMenu.TabIndex = 44;
-            this.btnMenu.Text = "Menu";
-            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
             // btnIn
             // 
             this.btnIn.BackColor = System.Drawing.Color.White;
@@ -152,23 +130,6 @@
             this.btnIn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnIn.UseVisualStyleBackColor = false;
             this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
-            // 
-            // btnGoimon
-            // 
-            this.btnGoimon.BackColor = System.Drawing.Color.White;
-            this.btnGoimon.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGoimon.ForeColor = System.Drawing.Color.Black;
-            this.btnGoimon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGoimon.ImageKey = "catering (1).png";
-            this.btnGoimon.ImageList = this.imageList1;
-            this.btnGoimon.Location = new System.Drawing.Point(682, 185);
-            this.btnGoimon.Name = "btnGoimon";
-            this.btnGoimon.Size = new System.Drawing.Size(120, 58);
-            this.btnGoimon.TabIndex = 42;
-            this.btnGoimon.Text = "Gọi món";
-            this.btnGoimon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGoimon.UseVisualStyleBackColor = false;
-            this.btnGoimon.Click += new System.EventHandler(this.btnGoimon_Click);
             // 
             // btnTinhtien
             // 
@@ -254,11 +215,8 @@
             this.ClientSize = new System.Drawing.Size(1248, 529);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnIn);
-            this.Controls.Add(this.btnGoimon);
             this.Controls.Add(this.btnTinhtien);
-            this.Controls.Add(this.pnlGoiMon);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lvDanhSachBan);
             this.DoubleBuffered = true;
@@ -282,11 +240,8 @@
         private System.Windows.Forms.ToolStripMenuItem hiểnThịTấtCảBànToolStripMenuItem;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel pnlGoiMon;
         private System.Windows.Forms.ListView lvDanhSachBan;
-        private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnIn;
-        private System.Windows.Forms.Button btnGoimon;
         private System.Windows.Forms.Button btnTinhtien;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
