@@ -1,6 +1,6 @@
 ﻿namespace QuanLyNhaHang
 {
-    partial class FrmMain
+    partial class FrmMainDemo
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainDemo));
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.ribbonPanel10 = new DevComponents.DotNetBar.RibbonPanel();
@@ -171,7 +171,8 @@
             this.btnDSNhanVien = new DevComponents.DotNetBar.ButtonItem();
             this.btnDSCV = new DevComponents.DotNetBar.ButtonItem();
             this.btnDanhsachchucvu = new DevComponents.DotNetBar.ButtonItem();
-            this.tabStrip1 = new DevComponents.DotNetBar.TabStrip();
+            this.TabHienThi = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel10.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
@@ -188,6 +189,7 @@
             this.expKHCN.SuspendLayout();
             this.expQuanli.SuspendLayout();
             this.expnhanvien.SuspendLayout();
+            this.TabHienThi.SuspendLayout();
             this.SuspendLayout();
             // 
             // styleManager1
@@ -1895,7 +1897,7 @@
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx1.Location = new System.Drawing.Point(5, 155);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(212, 407);
+            this.panelEx1.Size = new System.Drawing.Size(212, 406);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -1910,10 +1912,12 @@
             this.expKHDN.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.VS2005;
             this.expKHDN.Controls.Add(this.itemPanel4);
             this.expKHDN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.expKHDN.Expanded = false;
+            this.expKHDN.ExpandedBounds = new System.Drawing.Rectangle(0, 78, 212, 122);
             this.expKHDN.HideControlsWhenCollapsed = true;
-            this.expKHDN.Location = new System.Drawing.Point(0, 448);
+            this.expKHDN.Location = new System.Drawing.Point(0, 78);
             this.expKHDN.Name = "expKHDN";
-            this.expKHDN.Size = new System.Drawing.Size(212, 122);
+            this.expKHDN.Size = new System.Drawing.Size(212, 26);
             this.expKHDN.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expKHDN.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expKHDN.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -1946,7 +1950,7 @@
             this.itemPanel4.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel4.Location = new System.Drawing.Point(0, 26);
             this.itemPanel4.Name = "itemPanel4";
-            this.itemPanel4.Size = new System.Drawing.Size(212, 96);
+            this.itemPanel4.Size = new System.Drawing.Size(212, 0);
             this.itemPanel4.TabIndex = 1;
             this.itemPanel4.Text = "itemPanel4";
             // 
@@ -1972,10 +1976,12 @@
             this.expKHCN.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.VS2005;
             this.expKHCN.Controls.Add(this.itemPanel3);
             this.expKHCN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.expKHCN.Expanded = false;
+            this.expKHCN.ExpandedBounds = new System.Drawing.Rectangle(0, 52, 212, 123);
             this.expKHCN.HideControlsWhenCollapsed = true;
-            this.expKHCN.Location = new System.Drawing.Point(0, 325);
+            this.expKHCN.Location = new System.Drawing.Point(0, 52);
             this.expKHCN.Name = "expKHCN";
-            this.expKHCN.Size = new System.Drawing.Size(212, 123);
+            this.expKHCN.Size = new System.Drawing.Size(212, 26);
             this.expKHCN.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expKHCN.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expKHCN.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -2008,7 +2014,7 @@
             this.itemPanel3.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel3.Location = new System.Drawing.Point(0, 26);
             this.itemPanel3.Name = "itemPanel3";
-            this.itemPanel3.Size = new System.Drawing.Size(212, 97);
+            this.itemPanel3.Size = new System.Drawing.Size(212, 0);
             this.itemPanel3.TabIndex = 1;
             this.itemPanel3.Text = "itemPanel3";
             // 
@@ -2034,10 +2040,12 @@
             this.expQuanli.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.VS2005;
             this.expQuanli.Controls.Add(this.itemPanel2);
             this.expQuanli.Dock = System.Windows.Forms.DockStyle.Top;
+            this.expQuanli.Expanded = false;
+            this.expQuanli.ExpandedBounds = new System.Drawing.Rectangle(0, 26, 212, 119);
             this.expQuanli.HideControlsWhenCollapsed = true;
-            this.expQuanli.Location = new System.Drawing.Point(0, 206);
+            this.expQuanli.Location = new System.Drawing.Point(0, 26);
             this.expQuanli.Name = "expQuanli";
-            this.expQuanli.Size = new System.Drawing.Size(212, 119);
+            this.expQuanli.Size = new System.Drawing.Size(212, 26);
             this.expQuanli.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expQuanli.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expQuanli.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -2070,7 +2078,7 @@
             this.itemPanel2.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel2.Location = new System.Drawing.Point(0, 26);
             this.itemPanel2.Name = "itemPanel2";
-            this.itemPanel2.Size = new System.Drawing.Size(212, 93);
+            this.itemPanel2.Size = new System.Drawing.Size(212, 0);
             this.itemPanel2.TabIndex = 1;
             this.itemPanel2.Text = "itemPanel2";
             // 
@@ -2096,10 +2104,12 @@
             this.expnhanvien.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.VS2005;
             this.expnhanvien.Controls.Add(this.itemPanel1);
             this.expnhanvien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.expnhanvien.Expanded = false;
+            this.expnhanvien.ExpandedBounds = new System.Drawing.Rectangle(0, 0, 212, 206);
             this.expnhanvien.HideControlsWhenCollapsed = true;
             this.expnhanvien.Location = new System.Drawing.Point(0, 0);
             this.expnhanvien.Name = "expnhanvien";
-            this.expnhanvien.Size = new System.Drawing.Size(212, 206);
+            this.expnhanvien.Size = new System.Drawing.Size(212, 26);
             this.expnhanvien.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expnhanvien.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expnhanvien.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -2134,7 +2144,7 @@
             this.itemPanel1.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel1.Location = new System.Drawing.Point(0, 26);
             this.itemPanel1.Name = "itemPanel1";
-            this.itemPanel1.Size = new System.Drawing.Size(212, 180);
+            this.itemPanel1.Size = new System.Drawing.Size(212, 0);
             this.itemPanel1.TabIndex = 1;
             this.itemPanel1.Text = "itemPanel1";
             // 
@@ -2170,38 +2180,39 @@
             this.btnDanhsachchucvu.Name = "btnDanhsachchucvu";
             this.btnDanhsachchucvu.Text = "Danh Sách Chức Vụ";
             // 
-            // tabStrip1
+            // TabHienThi
             // 
-            this.tabStrip1.AutoSelectAttachedControl = true;
-            this.tabStrip1.CanReorderTabs = true;
-            this.tabStrip1.CloseButtonVisible = true;
-            this.tabStrip1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tabStrip1.ForeColor = System.Drawing.Color.Black;
-            this.tabStrip1.Location = new System.Drawing.Point(217, 155);
-            this.tabStrip1.MdiForm = this;
-            this.tabStrip1.MdiTabbedDocuments = true;
-            this.tabStrip1.Name = "tabStrip1";
-            this.tabStrip1.SelectedTab = null;
-            this.tabStrip1.Size = new System.Drawing.Size(1101, 23);
-            this.tabStrip1.Style = DevComponents.DotNetBar.eTabStripStyle.VS2005;
-            this.tabStrip1.TabIndex = 40;
-            this.tabStrip1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
-            this.tabStrip1.Text = "tabStrip1";
+            this.TabHienThi.Controls.Add(this.tabPage2);
+            this.TabHienThi.Location = new System.Drawing.Point(213, 158);
+            this.TabHienThi.Name = "TabHienThi";
+            this.TabHienThi.SelectedIndex = 0;
+            this.TabHienThi.Size = new System.Drawing.Size(1105, 406);
+            this.TabHienThi.TabIndex = 42;
             // 
-            // FrmMain
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1097, 380);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // FrmMainDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1323, 564);
-            this.Controls.Add(this.tabStrip1);
+            this.ClientSize = new System.Drawing.Size(1323, 563);
+            this.Controls.Add(this.TabHienThi);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.ribbonControl1);
             this.EnableGlass = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.Name = "FrmMain";
+            this.Name = "FrmMainDemo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CHƯƠNG TRÌNH QUẢN LÝ NHÀ HÀNG ĂN UỐNG";
-            this.Load += new System.EventHandler(this.FrmMain_Load);
+            this.Text = "DEMO";
+            this.Load += new System.EventHandler(this.FrmMainDemo_Load);
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
             this.ribbonPanel10.ResumeLayout(false);
@@ -2219,6 +2230,7 @@
             this.expKHCN.ResumeLayout(false);
             this.expQuanli.ResumeLayout(false);
             this.expnhanvien.ResumeLayout(false);
+            this.TabHienThi.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2298,7 +2310,6 @@
         private DevComponents.DotNetBar.ButtonItem btnDSCV;
         private DevComponents.DotNetBar.ButtonItem btnDanhsachchucvu;
         private DevComponents.DotNetBar.ButtonItem btnThanhToan;
-        private DevComponents.DotNetBar.TabStrip tabStrip1;
         private DevComponents.DotNetBar.ButtonItem btnDangXuat;
         private DevComponents.DotNetBar.ButtonItem btnBanTrong;
         private DevComponents.DotNetBar.RibbonPanel ribbonPanel6;
@@ -2368,5 +2379,7 @@
         private DevComponents.DotNetBar.ButtonItem btnCKChi;
         private DevComponents.DotNetBar.ButtonItem btnCDTC;
         private DevComponents.DotNetBar.ButtonItem btnKeHoachTuan;
+        private System.Windows.Forms.TabControl TabHienThi;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }

@@ -281,7 +281,5 @@ namespace QuanLyNhaHang.Views
             else
                 return;
         }
-
-
     }
 }

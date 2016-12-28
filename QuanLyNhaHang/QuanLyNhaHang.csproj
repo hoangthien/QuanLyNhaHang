@@ -118,13 +118,27 @@
     <Compile Include="Controllers\KhuVucCtrl.cs" />
     <Compile Include="Controllers\LoaiThucDonCtrl.cs" />
     <Compile Include="Controllers\NhanVienCtrl.cs" />
+    <Compile Include="Controllers\PhanQuyenCtrl.cs" />
     <Compile Include="Controllers\ThucDonCtrl.cs" />
     <Compile Include="Models\BanMod.cs" />
     <Compile Include="Models\GoiMonMod.cs" />
     <Compile Include="Models\KhachHangMod.cs" />
     <Compile Include="Models\KhuVucMod.cs" />
     <Compile Include="Models\LoaiThucDonMod.cs" />
+    <Compile Include="Models\PhanQuyenMod.cs" />
     <Compile Include="Models\ThucDonMod.cs" />
+    <Compile Include="FrmMainDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMainDemo.Designer.cs">
+      <DependentUpon>FrmMainDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmPhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmPhanQuyen.Designer.cs">
+      <DependentUpon>FrmPhanQuyen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmSearchNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,10 +181,10 @@
     <Compile Include="Views\FrmLoaiThucDon.Designer.cs">
       <DependentUpon>FrmLoaiThucDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmDangky.cs">
+    <Compile Include="frmDangky.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmDangky.Designer.cs">
+    <Compile Include="frmDangky.Designer.cs">
       <DependentUpon>frmDangky.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmBan.cs">
@@ -203,22 +217,28 @@
     <Compile Include="Views\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmNhanVienDemo.cs">
+    <Compile Include="FrmNhanVienDemo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmNhanVienDemo.Designer.cs">
+    <Compile Include="FrmNhanVienDemo.Designer.cs">
       <DependentUpon>FrmNhanVienDemo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmTTNV.cs">
+    <Compile Include="FrmTTNV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmTTNV.Designer.cs">
+    <Compile Include="FrmTTNV.Designer.cs">
       <DependentUpon>FrmTTNV.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\connection.cs" />
     <Compile Include="Models\NhanVienMod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMainDemo.resx">
+      <DependentUpon>FrmMainDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmPhanQuyen.resx">
+      <DependentUpon>FrmPhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmSearchNhanVien.resx">
       <DependentUpon>FrmSearchNhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,7 +260,7 @@
     <EmbeddedResource Include="Views\FrmLoaiThucDon.resx">
       <DependentUpon>FrmLoaiThucDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmDangky.resx">
+    <EmbeddedResource Include="frmDangky.resx">
       <DependentUpon>frmDangky.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmBan.resx">
@@ -258,10 +278,10 @@
     <EmbeddedResource Include="Views\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmNhanVienDemo.resx">
+    <EmbeddedResource Include="FrmNhanVienDemo.resx">
       <DependentUpon>FrmNhanVienDemo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmTTNV.resx">
+    <EmbeddedResource Include="FrmTTNV.resx">
       <DependentUpon>FrmTTNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />

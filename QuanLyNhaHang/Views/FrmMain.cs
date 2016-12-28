@@ -18,9 +18,9 @@ namespace QuanLyNhaHang
 
         private void fullscreen()
         {
-                this.WindowState = FormWindowState.Normal;
-                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-                this.Bounds = Screen.PrimaryScreen.Bounds;
+            this.WindowState = FormWindowState.Normal;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Bounds = Screen.PrimaryScreen.Bounds;
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -100,7 +100,7 @@ namespace QuanLyNhaHang
         {
             if (!CheckExistForm("FrmNhanVien"))
             {
-                Views.FrmNhanVienDemo Frm = new Views.FrmNhanVienDemo() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Views.FrmNhanVien Frm = new Views.FrmNhanVien() { MdiParent = this, WindowState = FormWindowState.Maximized };
                 Frm.Show();
             }
             else
@@ -127,7 +127,7 @@ namespace QuanLyNhaHang
             }
             else
                 ActiveChild("FrmKhachHang");
-            
+
         }
 
         private void btnThanhToan_Click(object sender, EventArgs e)
@@ -161,7 +161,7 @@ namespace QuanLyNhaHang
             }
             else
                 ActiveChild("FrmLoaiThucDon");
-            
+
         }
 
         private void btnKM_Click(object sender, EventArgs e)
@@ -173,7 +173,30 @@ namespace QuanLyNhaHang
             }
             else
                 ActiveChild("FrmThucDon");
-            
+
+        }
+
+        private void btnResgusti_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmSearchNhanVien"))
+            {
+                Views.FrmSearchNhanVien Frm = new Views.FrmSearchNhanVien() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmSearchNhanVien");
+
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmPhanQuyen"))
+            {
+                Views.FrmPhanQuyen Frm = new Views.FrmPhanQuyen() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmPhanQuyen");
         }
     }
 }

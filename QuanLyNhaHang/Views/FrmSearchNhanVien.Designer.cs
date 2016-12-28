@@ -56,8 +56,9 @@
             // 
             // grDanhSachNV
             // 
-            this.grDanhSachNV.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.grDanhSachNV.BackColor = System.Drawing.Color.White;
             this.grDanhSachNV.Controls.Add(this.dgvDanhSachNV);
+            this.grDanhSachNV.ForeColor = System.Drawing.Color.Black;
             this.grDanhSachNV.Location = new System.Drawing.Point(9, 94);
             this.grDanhSachNV.Name = "grDanhSachNV";
             this.grDanhSachNV.Size = new System.Drawing.Size(797, 176);
@@ -66,6 +67,8 @@
             // 
             // cmbFind
             // 
+            this.cmbFind.BackColor = System.Drawing.Color.White;
+            this.cmbFind.ForeColor = System.Drawing.Color.Black;
             this.cmbFind.FormattingEnabled = true;
             this.cmbFind.Location = new System.Drawing.Point(169, 26);
             this.cmbFind.Name = "cmbFind";
@@ -75,7 +78,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 17);
@@ -84,6 +89,8 @@
             // 
             // txtFind
             // 
+            this.txtFind.BackColor = System.Drawing.Color.White;
+            this.txtFind.ForeColor = System.Drawing.Color.Black;
             this.txtFind.Location = new System.Drawing.Point(312, 26);
             this.txtFind.Name = "txtFind";
             this.txtFind.Size = new System.Drawing.Size(258, 20);
@@ -92,37 +99,42 @@
             // 
             // btnFind
             // 
+            this.btnFind.BackColor = System.Drawing.Color.White;
             this.btnFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnFind.ForeColor = System.Drawing.Color.Black;
             this.btnFind.Location = new System.Drawing.Point(617, 25);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(75, 23);
             this.btnFind.TabIndex = 66;
             this.btnFind.Text = "Tìm kiếm";
-            this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.UseVisualStyleBackColor = false;
             this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(309, 64);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(160, 17);
             this.label12.TabIndex = 67;
             this.label12.Text = "KẾT QUẢ TÌM KIẾM";
             // 
-            // uctSearchNhanVien
+            // FrmSearchNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(796, 233);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnFind);
             this.Controls.Add(this.txtFind);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbFind);
             this.Controls.Add(this.grDanhSachNV);
+            this.DoubleBuffered = true;
             this.Name = "FrmSearchNhanVien";
-            this.Size = new System.Drawing.Size(812, 272);
             this.Load += new System.EventHandler(this.FrmSearchNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachNV)).EndInit();
             this.grDanhSachNV.ResumeLayout(false);

@@ -24,7 +24,6 @@ namespace QuanLyNhaHang.Views
             DataTable dt = new DataTable();
             dt = Models.BanMod.FillDataSetDanhSachBan_GoiMon().Tables[0];
             return dt;
-
         }
         public DataTable getBanDaGoi()
         {
@@ -147,7 +146,6 @@ namespace QuanLyNhaHang.Views
         }
         public void tinhtien()
         {
-
             try
             {
                 int tien = dgvGoiMon.Rows.Count;

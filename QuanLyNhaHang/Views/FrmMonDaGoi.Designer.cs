@@ -57,6 +57,8 @@
             // 
             // dtpThoiGian
             // 
+            this.dtpThoiGian.BackColor = System.Drawing.Color.White;
+            this.dtpThoiGian.ForeColor = System.Drawing.Color.Black;
             this.dtpThoiGian.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpThoiGian.Location = new System.Drawing.Point(316, 47);
             this.dtpThoiGian.Name = "dtpThoiGian";
@@ -65,6 +67,8 @@
             // 
             // txtSoLuong
             // 
+            this.txtSoLuong.BackColor = System.Drawing.Color.White;
+            this.txtSoLuong.ForeColor = System.Drawing.Color.Black;
             this.txtSoLuong.Location = new System.Drawing.Point(396, 12);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(52, 20);
@@ -73,6 +77,8 @@
             // 
             // txtDonGia
             // 
+            this.txtDonGia.BackColor = System.Drawing.Color.White;
+            this.txtDonGia.ForeColor = System.Drawing.Color.Black;
             this.txtDonGia.Location = new System.Drawing.Point(74, 47);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.ReadOnly = true;
@@ -82,6 +88,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(223, 51);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 13);
@@ -91,6 +99,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(321, 16);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 13);
@@ -100,6 +110,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(10, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
@@ -109,6 +121,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(141, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 13);
@@ -118,6 +132,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(10, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
@@ -126,6 +142,8 @@
             // 
             // cmbTenThucDon
             // 
+            this.cmbTenThucDon.BackColor = System.Drawing.Color.White;
+            this.cmbTenThucDon.ForeColor = System.Drawing.Color.Black;
             this.cmbTenThucDon.FormattingEnabled = true;
             this.cmbTenThucDon.Location = new System.Drawing.Point(234, 12);
             this.cmbTenThucDon.Name = "cmbTenThucDon";
@@ -136,6 +154,8 @@
             // cmbIdBan
             // 
             this.cmbIdBan.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.cmbIdBan.BackColor = System.Drawing.Color.White;
+            this.cmbIdBan.ForeColor = System.Drawing.Color.Black;
             this.cmbIdBan.FormattingEnabled = true;
             this.cmbIdBan.Location = new System.Drawing.Point(74, 12);
             this.cmbIdBan.Name = "cmbIdBan";
@@ -144,69 +164,81 @@
             // 
             // btnThemMoi
             // 
+            this.btnThemMoi.BackColor = System.Drawing.Color.White;
             this.btnThemMoi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThemMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemMoi.ForeColor = System.Drawing.Color.Black;
             this.btnThemMoi.Location = new System.Drawing.Point(34, 90);
             this.btnThemMoi.Name = "btnThemMoi";
             this.btnThemMoi.Size = new System.Drawing.Size(75, 23);
             this.btnThemMoi.TabIndex = 16;
             this.btnThemMoi.Text = "Thêm ";
-            this.btnThemMoi.UseVisualStyleBackColor = true;
+            this.btnThemMoi.UseVisualStyleBackColor = false;
             this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
             // 
             // btnHuy
             // 
+            this.btnHuy.BackColor = System.Drawing.Color.White;
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.ForeColor = System.Drawing.Color.Black;
             this.btnHuy.Location = new System.Drawing.Point(360, 90);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(77, 23);
             this.btnHuy.TabIndex = 20;
             this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
+            this.btnLuu.BackColor = System.Drawing.Color.White;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.Black;
             this.btnLuu.Location = new System.Drawing.Point(277, 90);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(77, 23);
             this.btnLuu.TabIndex = 19;
             this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             this.btnLuu.MouseEnter += new System.EventHandler(this.btnLuu_MouseEnter);
             this.btnLuu.MouseLeave += new System.EventHandler(this.btnLuu_MouseLeave);
             // 
             // btnSua
             // 
+            this.btnSua.BackColor = System.Drawing.Color.White;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.Color.Black;
             this.btnSua.Location = new System.Drawing.Point(115, 90);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
             this.btnSua.TabIndex = 17;
             this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
+            this.btnXoa.BackColor = System.Drawing.Color.White;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.Black;
             this.btnXoa.Location = new System.Drawing.Point(196, 90);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
             this.btnXoa.TabIndex = 18;
             this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.dgvGoiMon);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(13, 119);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(698, 232);
@@ -277,10 +309,11 @@
             this.ThanhTien.Name = "ThanhTien";
             this.ThanhTien.ReadOnly = true;
             // 
-            // uctMonDaGoi
+            // FrmMonDaGoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(711, 315);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnThemMoi);
             this.Controls.Add(this.btnHuy);
@@ -297,8 +330,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbTenThucDon);
             this.Controls.Add(this.cmbIdBan);
-            this.Name = "uctMonDaGoi";
-            this.Size = new System.Drawing.Size(727, 354);
+            this.DoubleBuffered = true;
+            this.Name = "FrmMonDaGoi";
             this.Load += new System.EventHandler(this.FrmMonDaGoi_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGoiMon)).EndInit();

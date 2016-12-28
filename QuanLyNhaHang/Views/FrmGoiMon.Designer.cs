@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGoiMon));
             this.ctxtnenuTabDanhSachBan = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.hiểnThịBànChưaCóNgườiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hiểnThịBànCóNgườiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +59,7 @@
             this.hiểnThịBànCóNgườiToolStripMenuItem,
             this.hiểnThịTấtCảBànToolStripMenuItem});
             this.ctxtnenuTabDanhSachBan.Name = "ctxtnenuTabDanhSachBan";
-            this.ctxtnenuTabDanhSachBan.Size = new System.Drawing.Size(219, 70);
+            this.ctxtnenuTabDanhSachBan.Size = new System.Drawing.Size(219, 92);
             // 
             // hiểnThịBànChưaCóNgườiToolStripMenuItem
             // 
@@ -85,18 +84,16 @@
             // 
             // imageList1
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "coffe_conguoi.png");
-            this.imageList1.Images.SetKeyName(1, "iconcfms.png");
-            this.imageList1.Images.SetKeyName(2, "catering (1).png");
-            this.imageList1.Images.SetKeyName(3, "round-border-menu-bar-128.png");
-            this.imageList1.Images.SetKeyName(4, "21216-200.png");
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Enabled = false;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(3, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
@@ -104,6 +101,8 @@
             // 
             // pnlGoiMon
             // 
+            this.pnlGoiMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            this.pnlGoiMon.ForeColor = System.Drawing.Color.Black;
             this.pnlGoiMon.Location = new System.Drawing.Point(477, 249);
             this.pnlGoiMon.Name = "pnlGoiMon";
             this.pnlGoiMon.Size = new System.Drawing.Size(784, 316);
@@ -111,7 +110,9 @@
             // 
             // lvDanhSachBan
             // 
+            this.lvDanhSachBan.BackColor = System.Drawing.Color.White;
             this.lvDanhSachBan.ContextMenuStrip = this.ctxtnenuTabDanhSachBan;
+            this.lvDanhSachBan.ForeColor = System.Drawing.Color.Black;
             this.lvDanhSachBan.LargeImageList = this.imageList1;
             this.lvDanhSachBan.Location = new System.Drawing.Point(0, 11);
             this.lvDanhSachBan.Name = "lvDanhSachBan";
@@ -123,9 +124,10 @@
             // 
             // btnMenu
             // 
+            this.btnMenu.BackColor = System.Drawing.Color.White;
             this.btnMenu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.ForeColor = System.Drawing.Color.Black;
             this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.ImageIndex = 3;
             this.btnMenu.ImageList = this.imageList1;
             this.btnMenu.Location = new System.Drawing.Point(556, 185);
             this.btnMenu.Name = "btnMenu";
@@ -133,13 +135,14 @@
             this.btnMenu.TabIndex = 44;
             this.btnMenu.Text = "Menu";
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnIn
             // 
+            this.btnIn.BackColor = System.Drawing.Color.White;
             this.btnIn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIn.Image = ((System.Drawing.Image)(resources.GetObject("btnIn.Image")));
+            this.btnIn.ForeColor = System.Drawing.Color.Black;
             this.btnIn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnIn.Location = new System.Drawing.Point(934, 185);
             this.btnIn.Name = "btnIn";
@@ -147,12 +150,14 @@
             this.btnIn.TabIndex = 41;
             this.btnIn.Text = "In hóa đơn";
             this.btnIn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnIn.UseVisualStyleBackColor = true;
+            this.btnIn.UseVisualStyleBackColor = false;
             this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
             // btnGoimon
             // 
+            this.btnGoimon.BackColor = System.Drawing.Color.White;
             this.btnGoimon.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoimon.ForeColor = System.Drawing.Color.Black;
             this.btnGoimon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGoimon.ImageKey = "catering (1).png";
             this.btnGoimon.ImageList = this.imageList1;
@@ -162,12 +167,14 @@
             this.btnGoimon.TabIndex = 42;
             this.btnGoimon.Text = "Gọi món";
             this.btnGoimon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGoimon.UseVisualStyleBackColor = true;
+            this.btnGoimon.UseVisualStyleBackColor = false;
             this.btnGoimon.Click += new System.EventHandler(this.btnGoimon_Click);
             // 
             // btnTinhtien
             // 
+            this.btnTinhtien.BackColor = System.Drawing.Color.White;
             this.btnTinhtien.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTinhtien.ForeColor = System.Drawing.Color.Black;
             this.btnTinhtien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTinhtien.ImageKey = "21216-200.png";
             this.btnTinhtien.ImageList = this.imageList1;
@@ -177,12 +184,14 @@
             this.btnTinhtien.TabIndex = 43;
             this.btnTinhtien.Text = "Tính tiền";
             this.btnTinhtien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTinhtien.UseVisualStyleBackColor = true;
+            this.btnTinhtien.UseVisualStyleBackColor = false;
             this.btnTinhtien.Click += new System.EventHandler(this.btnTinhtien_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.dgvGoiMon);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(477, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(710, 124);
@@ -205,8 +214,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.lblTongTien);
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(875, 133);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(313, 33);
@@ -216,8 +227,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(6, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 16);
@@ -227,17 +239,19 @@
             // lblTongTien
             // 
             this.lblTongTien.AutoSize = true;
+            this.lblTongTien.BackColor = System.Drawing.Color.White;
             this.lblTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblTongTien.ForeColor = System.Drawing.Color.Red;
+            this.lblTongTien.ForeColor = System.Drawing.Color.Black;
             this.lblTongTien.Location = new System.Drawing.Point(169, 14);
             this.lblTongTien.Name = "lblTongTien";
             this.lblTongTien.Size = new System.Drawing.Size(0, 16);
             this.lblTongTien.TabIndex = 50;
             // 
-            // uctGoiMon
+            // FrmGoiMon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1248, 529);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnMenu);
@@ -247,8 +261,8 @@
             this.Controls.Add(this.pnlGoiMon);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lvDanhSachBan);
+            this.DoubleBuffered = true;
             this.Name = "FrmGoiMon";
-            this.Size = new System.Drawing.Size(1264, 568);
             this.Load += new System.EventHandler(this.FrmGoiMon_Load);
             this.ctxtnenuTabDanhSachBan.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
