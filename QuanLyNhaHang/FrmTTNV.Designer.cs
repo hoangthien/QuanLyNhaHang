@@ -37,6 +37,8 @@
             System.Windows.Forms.Label gioiTinhLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTTNV));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnEdit = new DevComponents.DotNetBar.ButtonX();
+            this.btnSave = new DevComponents.DotNetBar.ButtonX();
             this.txtStaffCode = new DevExpress.XtraEditors.TextEdit();
             this.txtFullName = new DevExpress.XtraEditors.TextEdit();
             this.dtBirthday = new DevExpress.XtraEditors.DateEdit();
@@ -44,8 +46,6 @@
             this.txtPosition = new DevExpress.XtraEditors.TextEdit();
             this.txtNotes = new DevExpress.XtraEditors.TextEdit();
             this.txtGender = new DevExpress.XtraEditors.TextEdit();
-            this.btnEdit = new DevComponents.DotNetBar.ButtonX();
-            this.btnSave = new DevComponents.DotNetBar.ButtonX();
             maNVLabel = new System.Windows.Forms.Label();
             hoTenNVLabel = new System.Windows.Forms.Label();
             ngaySinhLabel = new System.Windows.Forms.Label();
@@ -195,6 +195,32 @@
             this.groupPanel1.TabIndex = 0;
             this.groupPanel1.Text = "Thông Tin Nhân Viên";
             // 
+            // btnEdit
+            // 
+            this.btnEdit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnEdit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnEdit.Image = global::QuanLyNhaHang.Properties.Resources.Edit;
+            this.btnEdit.Location = new System.Drawing.Point(413, 148);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(100, 29);
+            this.btnEdit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnEdit.TabIndex = 17;
+            this.btnEdit.Text = "SỬA";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnSave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnSave.Image = global::QuanLyNhaHang.Properties.Resources.save;
+            this.btnSave.Location = new System.Drawing.Point(271, 148);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(96, 29);
+            this.btnSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnSave.TabIndex = 16;
+            this.btnSave.Text = "LƯU";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // txtStaffCode
             // 
             this.txtStaffCode.Enabled = false;
@@ -283,32 +309,6 @@
             this.txtGender.Properties.Appearance.Options.UseForeColor = true;
             this.txtGender.Size = new System.Drawing.Size(232, 20);
             this.txtGender.TabIndex = 15;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnEdit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnEdit.Image = global::QuanLyNhaHang.Properties.Resources.Edit;
-            this.btnEdit.Location = new System.Drawing.Point(413, 148);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(100, 29);
-            this.btnEdit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnEdit.TabIndex = 17;
-            this.btnEdit.Text = "SỬA";
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnSave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnSave.Image = global::QuanLyNhaHang.Properties.Resources.save;
-            this.btnSave.Location = new System.Drawing.Point(271, 148);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(96, 29);
-            this.btnSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSave.TabIndex = 16;
-            this.btnSave.Text = "LƯU";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FrmTTNV
             // 
