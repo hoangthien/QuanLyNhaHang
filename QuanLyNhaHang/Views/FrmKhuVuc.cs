@@ -198,7 +198,5 @@ namespace QuanLyNhaHang.Views
             FrmKhuVuc_Load(sender, e);
             dis_end(false);
         }
-
-
     }
 }

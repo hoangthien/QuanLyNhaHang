@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmKhachHang));
             this.grQuanLyNV = new System.Windows.Forms.GroupBox();
             this.txtEmailKH = new System.Windows.Forms.TextBox();
             this.txtDiaChiKH = new System.Windows.Forms.TextBox();
@@ -401,7 +402,9 @@
             this.ClientSize = new System.Drawing.Size(1145, 548);
             this.Controls.Add(this.groupPanel1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmKhachHang";
+            this.Text = "QUẢN LÝ KHÁCH HÀNG";
             this.Load += new System.EventHandler(this.FrmKhachHang_Load);
             this.grQuanLyNV.ResumeLayout(false);
             this.grQuanLyNV.PerformLayout();

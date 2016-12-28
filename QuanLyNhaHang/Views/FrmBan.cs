@@ -186,6 +186,5 @@ namespace QuanLyNhaHang.Views
             dis_end(true);
             loadcontrol();
         }
-
     }
 }
