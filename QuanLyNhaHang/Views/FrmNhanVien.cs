@@ -41,14 +41,7 @@ namespace QuanLyNhaHang.Views
             HienThiDanhSachNhanVien();
             bingding();
         }
-        public void nhung(Control ctr)
-        {
-            pnlDanhSachNV.Controls.Clear();
-            pnlDanhSachNV.BorderStyle = BorderStyle.Fixed3D;
-            ctr.Dock = DockStyle.Fill;
-            pnlDanhSachNV.Controls.Add(ctr);
-            pnlDanhSachNV.Show();
-        }
+
         void loadcontrol()
         {
             cmbGioiTinhNV.Items.Clear();
@@ -137,18 +130,6 @@ namespace QuanLyNhaHang.Views
             {
                 e.Handled = true;
             }
-        }
-
-        private void btnFind_Click(object sender, EventArgs e)
-        {
-            FrmSearchNhanVien uctS = new FrmSearchNhanVien();
-            nhung(uctS);
-        }
-
-        private void btnHide_Click(object sender, EventArgs e)
-        {
-            pnlDanhSachNV.Controls.Clear();
-            pnlDanhSachNV.BorderStyle = BorderStyle.None;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)

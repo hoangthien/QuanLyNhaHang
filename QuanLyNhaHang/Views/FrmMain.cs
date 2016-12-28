@@ -70,20 +70,24 @@ namespace QuanLyNhaHang
             }
         }
 
-        private void btnInfomation_Click(object sender, EventArgs e)
+        private void btnDangKi_Click(object sender, EventArgs e)
         {
-            if (!CheckExistForm("FrmTTNV"))
-            {
-                FrmTTNV Frm = new FrmTTNV() { MdiParent = this, WindowState = FormWindowState.Maximized };
-                Frm.Show();
-            }
-            else
-                ActiveChild("FrmTTNV");
+
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -91,7 +95,32 @@ namespace QuanLyNhaHang
             Application.Exit();
         }
 
-        private void btnDSNhanVien_Click(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnBackup_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRestore_Click(object sender, EventArgs e)
         {
 
         }
@@ -107,76 +136,7 @@ namespace QuanLyNhaHang
                 ActiveChild("FrmNhanVien");
         }
 
-        private void btnQLKhachHang_Click(object sender, EventArgs e)
-        {
-            if (!CheckExistForm("FrmKhuVuc"))
-            {
-                Views.FrmKhuVuc Frm = new Views.FrmKhuVuc() { MdiParent = this, WindowState = FormWindowState.Maximized };
-                Frm.Show();
-            }
-            else
-                ActiveChild("FrmKhuVuc");
-        }
-
-        private void btnQLGoiMon_Click(object sender, EventArgs e)
-        {
-            if (!CheckExistForm("FrmKhachHang"))
-            {
-                Views.FrmKhachHang Frm = new Views.FrmKhachHang() { MdiParent = this, WindowState = FormWindowState.Maximized };
-                Frm.Show();
-            }
-            else
-                ActiveChild("FrmKhachHang");
-
-        }
-
-        private void btnThanhToan_Click(object sender, EventArgs e)
-        {
-            if (!CheckExistForm("FrmBan"))
-            {
-                Views.FrmBan Frm = new Views.FrmBan() { MdiParent = this, WindowState = FormWindowState.Maximized };
-                Frm.Show();
-            }
-            else
-                ActiveChild("FrmBan");
-        }
-
-        private void btnMonAn_Click(object sender, EventArgs e)
-        {
-            if (!CheckExistForm("FrmGoiMon"))
-            {
-                Views.FrmGoiMon Frm = new Views.FrmGoiMon() { MdiParent = this, WindowState = FormWindowState.Maximized };
-                Frm.Show();
-            }
-            else
-                ActiveChild("FrmGoiMon");
-        }
-
-        private void btnDoUong_Click(object sender, EventArgs e)
-        {
-            if (!CheckExistForm("FrmLoaiThucDon"))
-            {
-                Views.FrmLoaiThucDon Frm = new Views.FrmLoaiThucDon() { MdiParent = this, WindowState = FormWindowState.Maximized };
-                Frm.Show();
-            }
-            else
-                ActiveChild("FrmLoaiThucDon");
-
-        }
-
-        private void btnKM_Click(object sender, EventArgs e)
-        {
-            if (!CheckExistForm("FrmThucDon"))
-            {
-                Views.FrmThucDon Frm = new Views.FrmThucDon() { MdiParent = this, WindowState = FormWindowState.Maximized };
-                Frm.Show();
-            }
-            else
-                ActiveChild("FrmThucDon");
-
-        }
-
-        private void btnResgusti_Click(object sender, EventArgs e)
+        private void btnTimKiemNhanVien_Click(object sender, EventArgs e)
         {
             if (!CheckExistForm("FrmSearchNhanVien"))
             {
@@ -185,10 +145,9 @@ namespace QuanLyNhaHang
             }
             else
                 ActiveChild("FrmSearchNhanVien");
-
         }
 
-        private void btnLogIn_Click(object sender, EventArgs e)
+        private void btnPhanQuyenNhanVien_Click(object sender, EventArgs e)
         {
             if (!CheckExistForm("FrmPhanQuyen"))
             {
@@ -199,28 +158,14 @@ namespace QuanLyNhaHang
                 ActiveChild("FrmPhanQuyen");
         }
 
-        private void btnLogOut_Click(object sender, EventArgs e)
+        private void btnTinhLuong_Click(object sender, EventArgs e)
         {
-            if (!CheckExistForm("FrmMonDaGoi"))
-            {
-                Views.FrmMonDaGoi Frm = new Views.FrmMonDaGoi() { MdiParent = this, WindowState = FormWindowState.Maximized };
-                Frm.Show();
-            }
-            else
-                ActiveChild("FrmMonDaGoi");
-            
+
         }
 
-        private void btnBackup_Click(object sender, EventArgs e)
+        private void btnChamCong_Click(object sender, EventArgs e)
         {
-            if (!CheckExistForm("FrmDanhSachTD"))
-            {
-                Views.FrmDanhSachTD Frm = new Views.FrmDanhSachTD() { MdiParent = this, WindowState = FormWindowState.Maximized };
-                Frm.Show();
-            }
-            else
-                ActiveChild("FrmDanhSachTD");
-            
+
         }
     }
 }

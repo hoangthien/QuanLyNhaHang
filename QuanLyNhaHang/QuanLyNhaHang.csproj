@@ -127,12 +127,6 @@
     <Compile Include="Models\LoaiThucDonMod.cs" />
     <Compile Include="Models\PhanQuyenMod.cs" />
     <Compile Include="Models\ThucDonMod.cs" />
-    <Compile Include="FrmMainDemo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMainDemo.Designer.cs">
-      <DependentUpon>FrmMainDemo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\FrmPhanQuyen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,9 +227,6 @@
     <Compile Include="Models\NhanVienMod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmMainDemo.resx">
-      <DependentUpon>FrmMainDemo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmPhanQuyen.resx">
       <DependentUpon>FrmPhanQuyen.cs</DependentUpon>
     </EmbeddedResource>

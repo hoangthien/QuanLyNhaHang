@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnFind = new System.Windows.Forms.Button();
-            this.pnlDanhSachNV = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.grDanhSachNV = new System.Windows.Forms.GroupBox();
             this.dgvDanhSachNV = new System.Windows.Forms.DataGridView();
@@ -64,33 +62,10 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnThemMoi = new System.Windows.Forms.Button();
-            this.btnHide = new System.Windows.Forms.Button();
             this.grDanhSachNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachNV)).BeginInit();
             this.grQuanLyNV.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnFind
-            // 
-            this.btnFind.BackColor = System.Drawing.Color.White;
-            this.btnFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFind.ForeColor = System.Drawing.Color.Black;
-            this.btnFind.Location = new System.Drawing.Point(481, 275);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(96, 23);
-            this.btnFind.TabIndex = 65;
-            this.btnFind.Text = "Tìm kiếm ";
-            this.btnFind.UseVisualStyleBackColor = false;
-            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
-            // 
-            // pnlDanhSachNV
-            // 
-            this.pnlDanhSachNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
-            this.pnlDanhSachNV.ForeColor = System.Drawing.Color.Black;
-            this.pnlDanhSachNV.Location = new System.Drawing.Point(26, 313);
-            this.pnlDanhSachNV.Name = "pnlDanhSachNV";
-            this.pnlDanhSachNV.Size = new System.Drawing.Size(812, 272);
-            this.pnlDanhSachNV.TabIndex = 63;
             // 
             // label12
             // 
@@ -468,19 +443,6 @@
             this.btnThemMoi.UseVisualStyleBackColor = false;
             this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
             // 
-            // btnHide
-            // 
-            this.btnHide.BackColor = System.Drawing.Color.White;
-            this.btnHide.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHide.ForeColor = System.Drawing.Color.Black;
-            this.btnHide.Location = new System.Drawing.Point(583, 275);
-            this.btnHide.Name = "btnHide";
-            this.btnHide.Size = new System.Drawing.Size(96, 23);
-            this.btnHide.TabIndex = 65;
-            this.btnHide.Text = "Ẩn ";
-            this.btnHide.UseVisualStyleBackColor = false;
-            this.btnHide.Click += new System.EventHandler(this.btnHide_Click);
-            // 
             // FrmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,9 +457,6 @@
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnThemMoi);
-            this.Controls.Add(this.btnHide);
-            this.Controls.Add(this.btnFind);
-            this.Controls.Add(this.pnlDanhSachNV);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "FrmNhanVien";
@@ -512,9 +471,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnFind;
-        private System.Windows.Forms.Panel pnlDanhSachNV;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox grDanhSachNV;
         private System.Windows.Forms.DataGridView dgvDanhSachNV;
@@ -549,6 +505,5 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnThemMoi;
-        private System.Windows.Forms.Button btnHide;
     }
 }
