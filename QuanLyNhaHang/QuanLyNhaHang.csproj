@@ -324,12 +324,50 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\DangKy.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\save.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DangNhap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DangXuat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaoLuu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhucHoi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuenMK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThongTin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QLNhanVien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TimKiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhanQuyen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TinhLuong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChamCong.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

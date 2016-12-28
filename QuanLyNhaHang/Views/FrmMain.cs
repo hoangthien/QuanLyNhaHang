@@ -167,5 +167,10 @@ namespace QuanLyNhaHang
         {
 
         }
+
+        private void btnQuenMK_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
