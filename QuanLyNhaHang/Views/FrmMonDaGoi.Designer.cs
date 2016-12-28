@@ -54,6 +54,7 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGoiMon)).BeginInit();
             this.groupPanel1.SuspendLayout();
@@ -172,9 +173,9 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.dgvGoiMon);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(3, 263);
+            this.groupBox1.Location = new System.Drawing.Point(3, 230);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1118, 232);
+            this.groupBox1.Size = new System.Drawing.Size(1118, 265);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             // 
@@ -197,7 +198,7 @@
             this.dgvGoiMon.Location = new System.Drawing.Point(3, 16);
             this.dgvGoiMon.Name = "dgvGoiMon";
             this.dgvGoiMon.ReadOnly = true;
-            this.dgvGoiMon.Size = new System.Drawing.Size(1112, 213);
+            this.dgvGoiMon.Size = new System.Drawing.Size(1112, 246);
             this.dgvGoiMon.TabIndex = 16;
             // 
             // IdBan
@@ -246,6 +247,7 @@
             // 
             this.groupPanel1.BackColor = System.Drawing.Color.White;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
+            this.groupPanel1.Controls.Add(this.labelControl1);
             this.groupPanel1.Controls.Add(this.groupBox2);
             this.groupPanel1.Controls.Add(this.btnThemMoi);
             this.groupPanel1.Controls.Add(this.groupBox1);
@@ -300,6 +302,7 @@
             this.groupBox2.Controls.Add(this.txtSoLuong);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txtDonGia);
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(37, 15);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1081, 88);
@@ -392,6 +395,17 @@
             this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.BackColor = System.Drawing.Color.White;
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl1.Location = new System.Drawing.Point(399, 205);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(296, 19);
+            this.labelControl1.TabIndex = 81;
+            this.labelControl1.Text = "DANH SÁCH BÀN GỌI MÓN CHI TIẾT";
+            // 
             // FrmMonDaGoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,11 +415,12 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMonDaGoi";
-            this.Text = "GỌI MÓN";
+            this.Text = "QUẢN LÝ GỌI MÓN";
             this.Load += new System.EventHandler(this.FrmMonDaGoi_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGoiMon)).EndInit();
             this.groupPanel1.ResumeLayout(false);
+            this.groupPanel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -439,5 +454,6 @@
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.GroupBox groupBox2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }
