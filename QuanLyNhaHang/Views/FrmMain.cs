@@ -100,7 +100,7 @@ namespace QuanLyNhaHang
         {
             if (!CheckExistForm("FrmNhanVien"))
             {
-                Views.FrmNhanVien Frm = new Views.FrmNhanVien() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Views.FrmNhanVienDemo Frm = new Views.FrmNhanVienDemo() { MdiParent = this, WindowState = FormWindowState.Maximized };
                 Frm.Show();
             }
             else
