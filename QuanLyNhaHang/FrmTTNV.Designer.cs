@@ -52,7 +52,7 @@
             this.groupPanel1.Controls.Add(this.btnXoa);
             this.groupPanel1.Controls.Add(this.btnLuu);
             this.groupPanel1.Controls.Add(this.btnSua);
-            this.groupPanel1.Location = new System.Drawing.Point(12, 12);
+            this.groupPanel1.Location = new System.Drawing.Point(24, 12);
             this.groupPanel1.Name = "groupPanel1";
             this.groupPanel1.Size = new System.Drawing.Size(757, 213);
             // 

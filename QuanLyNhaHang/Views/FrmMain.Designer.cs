@@ -187,11 +187,11 @@
             // 
             this.ribbonControl1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonControl1.CaptionVisible = true;
+            this.ribbonControl1.Controls.Add(this.ribbonPanel4);
             this.ribbonControl1.Controls.Add(this.ribbonPanel3);
             this.ribbonControl1.Controls.Add(this.ribbonPanel2);
             this.ribbonControl1.Controls.Add(this.ribbonPanel1);
             this.ribbonControl1.Controls.Add(this.ribbonPanel9);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel4);
             this.ribbonControl1.Controls.Add(this.ribbonPanel8);
             this.ribbonControl1.Controls.Add(this.ribbonPanel5);
             this.ribbonControl1.Controls.Add(this.ribbonPanel6);
@@ -312,6 +312,7 @@
             // 
             this.ribbonPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel3.TabIndex = 3;
+            this.ribbonPanel3.Visible = false;
             // 
             // barkhdoanhnghiep
             // 
@@ -586,10 +587,10 @@
             this.ribbonPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonPanel4.Controls.Add(this.barthongke);
             this.ribbonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel4.Location = new System.Drawing.Point(0, 0);
+            this.ribbonPanel4.Location = new System.Drawing.Point(0, 54);
             this.ribbonPanel4.Name = "ribbonPanel4";
             this.ribbonPanel4.Padding = new System.Windows.Forms.Padding(3, 0, 3, 2);
-            this.ribbonPanel4.Size = new System.Drawing.Size(1313, 154);
+            this.ribbonPanel4.Size = new System.Drawing.Size(1313, 100);
             // 
             // 
             // 
@@ -603,7 +604,6 @@
             // 
             this.ribbonPanel4.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel4.TabIndex = 4;
-            this.ribbonPanel4.Visible = false;
             // 
             // barthongke
             // 
@@ -624,7 +624,7 @@
             this.btnDSThucDon});
             this.barthongke.Location = new System.Drawing.Point(3, 0);
             this.barthongke.Name = "barthongke";
-            this.barthongke.Size = new System.Drawing.Size(398, 152);
+            this.barthongke.Size = new System.Drawing.Size(398, 98);
             this.barthongke.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.barthongke.TabIndex = 2;
             this.barthongke.Text = "Quản Lý  Món Ăn Trong Nhà Hàng";
@@ -985,13 +985,13 @@
             // 
             // tebdoanhngiep
             // 
-            this.tebdoanhngiep.Checked = true;
             this.tebdoanhngiep.Name = "tebdoanhngiep";
             this.tebdoanhngiep.Panel = this.ribbonPanel3;
             this.tebdoanhngiep.Text = "QUẢN LÝ BÀN ĂN";
             // 
             // tabthongke
             // 
+            this.tabthongke.Checked = true;
             this.tabthongke.Name = "tabthongke";
             this.tabthongke.Panel = this.ribbonPanel4;
             this.tabthongke.Text = "QUẢN LÝ THỰC ĐƠN";
