@@ -172,5 +172,126 @@ namespace QuanLyNhaHang
         {
 
         }
+
+        private void btnQLKhachHang_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmKhachHang"))
+            {
+                Views.FrmKhachHang Frm = new Views.FrmKhachHang() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmKhachHang");
+        }
+
+        private void btnTimKiemKhachHang_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmKhachHang"))
+            {
+                Views.FrmKhachHang Frm = new Views.FrmKhachHang() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmKhachHang");
+        }
+
+        private void btnQLKhuVuc_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmKhuVuc"))
+            {
+                Views.FrmKhuVuc Frm = new Views.FrmKhuVuc() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmKhuVuc");
+        }
+
+        private void btnQLBanAn_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmBan"))
+            {
+                Views.FrmBan Frm = new Views.FrmBan() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmBan");
+        }
+
+        private void btnBanDangTrong_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmGoiMon"))
+            {
+                Views.FrmGoiMon Frm = new Views.FrmGoiMon() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmGoiMon");
+        }
+
+        private void btnBanDangPhucVu_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmGoiMon"))
+            {
+                Views.FrmGoiMon Frm = new Views.FrmGoiMon() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmGoiMon");
+        }
+
+        private void btnQLLoaiThucDon_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmLoaiThucDon"))
+            {
+                Views.FrmLoaiThucDon Frm = new Views.FrmLoaiThucDon() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmLoaiThucDon");
+        }
+
+        private void btnQLThucDon_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmThucDon"))
+            {
+                Views.FrmThucDon Frm = new Views.FrmThucDon() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmThucDon");
+        }
+
+        private void btnDSThucDon_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmDanhSachTD"))
+            {
+                Views.FrmDanhSachTD Frm = new Views.FrmDanhSachTD() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmDanhSachTD");
+        }
+
+        private void btnQLGoiMon_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmMonDaGoi"))
+            {
+                Views.FrmMonDaGoi Frm = new Views.FrmMonDaGoi() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmMonDaGoi");
+        }
+
+        private void btnQLTinhTien_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmGoiMon"))
+            {
+                Views.FrmGoiMon Frm = new Views.FrmGoiMon() { MdiParent = this, WindowState = FormWindowState.Maximized };
+                Frm.Show();
+            }
+            else
+                ActiveChild("FrmGoiMon");
+        }
     }
 }
