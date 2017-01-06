@@ -88,12 +88,8 @@
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "21216-200.png");
-            this.imageList1.Images.SetKeyName(1, "catering (1).png");
-            this.imageList1.Images.SetKeyName(2, "coffe_conguoi.png");
-            this.imageList1.Images.SetKeyName(3, "iconcfms.png");
-            this.imageList1.Images.SetKeyName(4, "print.png");
-            this.imageList1.Images.SetKeyName(5, "round-border-menu-bar-128.png");
+            this.imageList1.Images.SetKeyName(0, "BanTrong.png");
+            this.imageList1.Images.SetKeyName(1, "QLKhachHang.png");
             // 
             // label1
             // 
