@@ -32,7 +32,7 @@
             this.userlabel = new DevExpress.XtraEditors.LabelControl();
             this.labelpass = new DevExpress.XtraEditors.LabelControl();
             this.txtUserName = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.txtPassWork = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtPassword = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btnDangNhap = new DevComponents.DotNetBar.ButtonX();
             this.btnThoat = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
@@ -74,21 +74,21 @@
             this.txtUserName.Size = new System.Drawing.Size(202, 22);
             this.txtUserName.TabIndex = 2;
             // 
-            // txtPassWork
+            // txtPassword
             // 
-            this.txtPassWork.BackColor = System.Drawing.Color.White;
+            this.txtPassword.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
-            this.txtPassWork.Border.Class = "TextBoxBorder";
-            this.txtPassWork.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtPassWork.ForeColor = System.Drawing.Color.Black;
-            this.txtPassWork.Location = new System.Drawing.Point(166, 76);
-            this.txtPassWork.Name = "txtPassWork";
-            this.txtPassWork.PreventEnterBeep = true;
-            this.txtPassWork.Size = new System.Drawing.Size(202, 22);
-            this.txtPassWork.TabIndex = 3;
-            this.txtPassWork.UseSystemPasswordChar = true;
+            this.txtPassword.Border.Class = "TextBoxBorder";
+            this.txtPassword.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
+            this.txtPassword.Location = new System.Drawing.Point(166, 76);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PreventEnterBeep = true;
+            this.txtPassword.Size = new System.Drawing.Size(202, 22);
+            this.txtPassword.TabIndex = 3;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnDangNhap
             // 
@@ -123,7 +123,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);
-            this.Controls.Add(this.txtPassWork);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.labelpass);
             this.Controls.Add(this.userlabel);
@@ -145,6 +145,6 @@
         private DevComponents.DotNetBar.ButtonX btnDangNhap;
         private DevComponents.DotNetBar.ButtonX btnThoat;
         public DevComponents.DotNetBar.Controls.TextBoxX txtUserName;
-        public DevComponents.DotNetBar.Controls.TextBoxX txtPassWork;
+        public DevComponents.DotNetBar.Controls.TextBoxX txtPassword;
     }
 }

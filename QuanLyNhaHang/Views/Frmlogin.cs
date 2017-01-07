@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,12 +19,22 @@ namespace QuanLyNhaHang
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-
+            if (txtUserName.Text == "admin" && txtPassword.Text == "1234")
+            {
+                var mainForm = new FrmMain();
+                mainForm.ShowDialog();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Sai user và mật khẩu. Nhập lại!");
+                txtUserName.Focus();
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
     }
 }

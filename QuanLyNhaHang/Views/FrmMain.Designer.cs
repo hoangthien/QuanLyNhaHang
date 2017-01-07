@@ -38,7 +38,6 @@
             this.btnRestore = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
             this.btnRegister = new DevComponents.DotNetBar.ButtonItem();
-            this.btnLogIn = new DevComponents.DotNetBar.ButtonItem();
             this.btnLogOut = new DevComponents.DotNetBar.ButtonItem();
             this.btnQuenMK = new DevComponents.DotNetBar.ButtonItem();
             this.btnExit = new DevComponents.DotNetBar.ButtonItem();
@@ -275,7 +274,7 @@
             this.ribbonBar11.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.btnBackup,
             this.btnRestore});
-            this.ribbonBar11.Location = new System.Drawing.Point(616, 0);
+            this.ribbonBar11.Location = new System.Drawing.Point(497, 0);
             this.ribbonBar11.Name = "ribbonBar11";
             this.ribbonBar11.Size = new System.Drawing.Size(263, 98);
             this.ribbonBar11.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -325,13 +324,12 @@
             this.ribbonBar1.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.btnRegister,
-            this.btnLogIn,
             this.btnLogOut,
             this.btnQuenMK,
             this.btnExit});
             this.ribbonBar1.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar1.Name = "ribbonBar1";
-            this.ribbonBar1.Size = new System.Drawing.Size(613, 98);
+            this.ribbonBar1.Size = new System.Drawing.Size(494, 98);
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar1.TabIndex = 0;
             this.ribbonBar1.Text = "Quản Trị Hệ Thống";
@@ -353,16 +351,6 @@
             this.btnRegister.SubItemsExpandWidth = 14;
             this.btnRegister.Text = "<div width=\"110\" align=\"center\">Đăng Ký</div>";
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
-            // 
-            // btnLogIn
-            // 
-            this.btnLogIn.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnLogIn.Image = global::QuanLyNhaHang.Properties.Resources.DangNhap;
-            this.btnLogIn.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.SubItemsExpandWidth = 14;
-            this.btnLogIn.Text = "<div width=\"110\" align=\"center\">Đăng Nhập</div>";
-            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // btnLogOut
             // 
@@ -1716,7 +1704,7 @@
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx1.Location = new System.Drawing.Point(5, 155);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(212, 367);
+            this.panelEx1.Size = new System.Drawing.Size(212, 365);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -2020,7 +2008,7 @@
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1323, 524);
+            this.ClientSize = new System.Drawing.Size(1323, 522);
             this.Controls.Add(this.tabStrip1);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.ribbonControl1);
@@ -2133,7 +2121,6 @@
         private DevComponents.DotNetBar.RibbonTabItem ribbonTabItem5;
         private DevComponents.DotNetBar.RibbonBar ribbonBar1;
         private DevComponents.DotNetBar.ButtonItem btnRegister;
-        private DevComponents.DotNetBar.ButtonItem btnLogIn;
         private DevComponents.DotNetBar.ButtonItem btnLogOut;
         private DevComponents.DotNetBar.ButtonItem btnExit;
         private DevComponents.DotNetBar.RibbonBar ribbonBar5;
